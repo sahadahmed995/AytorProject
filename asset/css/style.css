@@ -36,6 +36,13 @@ nav .navbar-nav li:hover a span svg {
   transform: rotateZ(180deg);
   transition: 0.35s;
 }
+nav .navbar-nav li.active a {
+  color: #FF6F61 !important;
+}
+nav .navbar-nav li.active a span svg {
+  transform: rotateZ(180deg);
+  transition: 0.35s;
+}
 nav .navbar-nav li:first-child {
   padding-right: 25px;
   padding-left: 0;
@@ -68,4 +75,30 @@ nav .left-icons li a span {
 }
 nav .left-icons li:hover a {
   color: #FF6F61;
+}
+nav .navbar-toggler {
+  margin: 0 10px;
+  border: none;
+  outline: none;
+}
+nav .navbar-toggler:focus {
+  box-shadow: none;
+}
+
+aside .offcanvas-header img {
+  width: 120px;
+}
+aside .offcanvas-body {
+  margin-top: 50px;
+}
+aside .offcanvas-body ul li {
+  border-bottom: 1px solid black;
+  padding: 10px 0;
+}
+aside .offcanvas-body ul li.active a {
+  color: #FF6F61 !important;
+}
+aside .offcanvas-body ul li.active a span svg {
+  transform: rotateZ(180deg);
+  transition: 0.35s;
 }

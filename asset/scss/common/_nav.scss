@@ -1,3 +1,5 @@
+// *nav starts
+
 nav{
     .navbar-nav{
         li{
@@ -14,6 +16,14 @@ nav{
                     transition: .35s;
                 }
             }
+            &.active a{
+                color: $babyPink !important;
+                span svg{
+                    transform: rotateZ(180deg);
+                    transition: .35s;
+                }
+            }
+
         }
         li:first-child{
             padding-right: 25px;
@@ -51,4 +61,44 @@ nav{
             }
         }
     }
+    .navbar-toggler{
+        margin:0 10px;
+        border: none;
+        outline: none;
+        &:focus{
+            box-shadow: none;
+        }
+    }
 }
+
+// *nav ends
+
+// *sideBar stats
+
+aside{
+    .offcanvas-header{
+        img{
+            width: 120px;
+        }
+    }
+    .offcanvas-body{
+        margin-top: 50px;
+        ul{
+            li{
+               border-bottom: 1px solid black;
+               padding: 10px 0 ;
+               
+               &.active a{
+                color: $babyPink !important;
+                span svg{
+                    transform: rotateZ(180deg);
+                    transition: .35s;
+                    }
+                }
+               
+            }
+        }
+    }
+}
+
+// *sideBar ends
