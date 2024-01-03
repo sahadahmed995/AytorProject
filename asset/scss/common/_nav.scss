@@ -1,0 +1,54 @@
+nav{
+    .navbar-nav{
+        li{
+            padding: 0 15px;
+            a{
+                padding: 0 !important;
+                color: $textColor !important;
+                transition: .35s;
+            }
+            &:hover a{
+                color: $babyPink !important;
+                span svg{
+                    transform: rotateZ(180deg);
+                    transition: .35s;
+                }
+            }
+        }
+        li:first-child{
+            padding-right: 25px;
+            padding-left: 0;
+        }
+        li:last-child{
+            padding-right: 0;
+        }
+    }
+    .left-icons{
+        li{
+            display: inline-block;
+            padding: 0 10px;
+            a{
+                color: $blackColor;
+                transition: .35s;
+                position: relative;
+                span{
+                    position: absolute;
+                    top: -30%;
+                    right: -60%;
+                    z-index: 99;
+                    width: 15px;
+                    height: 15px;
+                    border-radius: 50%;
+                    background-color: $babyPink;
+                    text-align: center;
+                    line-height: 15px;
+                    font-size: 14px;
+                    color: $white;
+                }
+            }
+            &:hover a{
+                color: $babyPink;
+            }
+        }
+    }
+}
