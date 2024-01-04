@@ -1,0 +1,52 @@
+// *BANNER FOR LG STARTS
+
+#banner{
+    .bannerSlide{
+        height: 600px;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        h4{
+            color: $textColor;
+            font-size: 18px;
+            font-weight: 600;
+        }
+        h2{
+            color: $textColor;
+            font-size: 64px;
+            font-weight: 700;
+            margin: 16px 0;
+        }
+        p{
+            color: $textColor;
+            font-family: $secFont;
+        }
+        .bannerBtn{
+            @extend %commonBtn;
+        }
+
+        // *content animation sarts
+        .bannerCtn{
+            opacity: 0;
+            transform: translateY(-100%);
+            transition: 1s;
+        }
+        &.slick-active{
+            .bannerCtn{
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        // *content animation ends
+
+    // *slick dots starts
+
+    }
+    .slick-dots{
+        @extend %commonDots;
+        bottom: 120px;
+    }
+    // *slick dots ends
+}
+
+// *BANNER FOR LG ENDS

@@ -16,3 +16,47 @@ ul,ol{
 a{
     text-decoration: none;
 }
+
+// *common btn
+
+%commonBtn{
+    display: inline-block;
+    color: $white;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 13px 37px;
+    background-color: $babyPink;
+    margin: 30px 0;
+    transition: .35s;
+    &:hover{
+        background-color: $babyPinkOnHover;
+    }
+}
+
+// *commonDots
+
+%commonDots{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    li{
+        display: inline-block;
+        
+        button{
+            background-color: $white;
+            border: none;
+            color: transparent;
+            outline: none;
+            width: 10.909px;
+            height: 6px;
+            margin: 0 3px;
+            border-radius: 5px;
+            transition: .35s;
+        }
+        &.slick-active button{
+            width: 28.364px;
+            background-color: $babyPink;
+        }
+    }
+}

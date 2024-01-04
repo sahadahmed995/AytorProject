@@ -17,11 +17,13 @@ nav{
                 }
             }
             &.active a{
-                color: $babyPink !important;
                 span svg{
                     transform: rotateZ(180deg);
                     transition: .35s;
                 }
+            }
+            &.currentPage a{
+                color: $babyPink !important;
             }
 
         }
