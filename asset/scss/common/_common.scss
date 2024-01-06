@@ -17,23 +17,7 @@ a{
     text-decoration: none;
 }
 
-// *common btn
-
-%commonBtn{
-    display: inline-block;
-    color: $white;
-    font-size: 18px;
-    font-weight: 600;
-    padding: 13px 37px;
-    background-color: $babyPink;
-    margin: 30px 0;
-    transition: .35s;
-    &:hover{
-        background-color: $babyPinkOnHover;
-    }
-}
-
-// *commonDots
+// *commonDots starts
 
 %commonDots{
     position: absolute;
@@ -60,3 +44,54 @@ a{
         }
     }
 }
+
+// *commonDots ends
+
+// *common media starts
+@mixin xs() {
+    @media (320px <= width <= 575px) {
+        @content;
+    }
+}
+@mixin sm(){
+    @media (576px <= width <= 767px) {
+        @content;
+    }
+}
+@mixin md(){
+    @media (768px <= width <= 991px) {
+        @content;
+    }
+}
+@mixin lg(){
+    @media (992px <= width <= 1199px) {
+        @content;
+    }
+}
+// *common media ends
+
+// *common btn starst
+
+%commonBtn{
+    display: inline-block;
+    color: $white;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 13px 37px;
+    background-color: $babyPink;
+    margin: 30px 0;
+    transition: .35s;
+    &:hover{
+        background-color: $babyPinkOnHover;
+    }
+    @include xs(){
+        font-size: 14px;
+        padding:12px 18px;
+    }
+    @include sm(){
+        font-size: 16px;
+        padding: 14px 20px;
+    }
+}
+
+// *common btn ends

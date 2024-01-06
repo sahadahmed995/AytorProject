@@ -10,16 +10,34 @@
             color: $textColor;
             font-size: 18px;
             font-weight: 600;
+            @include xs(){
+                font-size: 14px;
+            }
+            @include sm(){
+                font-size: 16px;
+            }
         }
         h2{
             color: $textColor;
             font-size: 64px;
             font-weight: 700;
             margin: 16px 0;
+            @include xs(){
+                font-size: 36px;
+            }
+            @include sm(){
+                font-size: 42px;
+            }
         }
         p{
             color: $textColor;
             font-family: $secFont;
+            @include xs(){
+                font-size: 14px;
+            }
+            @include sm(){
+                font-size: 16px;
+            }
         }
         .bannerBtn{
             @extend %commonBtn;
@@ -36,6 +54,21 @@
                 opacity: 1;
                 transform: translateY(0);
             }
+        }
+        &.slide1{
+            @include xs(){
+                background-image: url(../images/banner1_mobile.jpg) !important;
+                background-position: center;
+            };
+        }
+        @include xs(){
+            background-position: 80%;
+            background-repeat: no-repeat;
+            height: 400px;
+        }
+        @include sm(){
+            background-position: 85%;
+            height: 450px;
         }
         // *content animation ends
 

@@ -14,6 +14,14 @@ $(function(){
         dotsClass: "container slick-dots",
         autoplay: true,
         autoplaySpeed: 3000,
+        responsive: [
+            {
+              breakpoint: 991,
+              settings: {
+                dots:false,
+              }
+            },
+          ]
     })
     // *banner slider ends
 })

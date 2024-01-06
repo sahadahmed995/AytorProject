@@ -21,20 +21,6 @@ a {
   text-decoration: none;
 }
 
-#banner .bannerSlide .bannerBtn {
-  display: inline-block;
-  color: #fff;
-  font-size: 18px;
-  font-weight: 600;
-  padding: 13px 37px;
-  background-color: #FF6F61;
-  margin: 30px 0;
-  transition: 0.35s;
-}
-#banner .bannerSlide .bannerBtn:hover {
-  background-color: rgba(255, 110, 97, 0.6784313725);
-}
-
 #banner .slick-dots {
   position: absolute;
   bottom: 0;
@@ -58,6 +44,32 @@ a {
 #banner .slick-dots li.slick-active button {
   width: 28.364px;
   background-color: #FF6F61;
+}
+
+#banner .bannerSlide .bannerBtn {
+  display: inline-block;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 13px 37px;
+  background-color: #FF6F61;
+  margin: 30px 0;
+  transition: 0.35s;
+}
+#banner .bannerSlide .bannerBtn:hover {
+  background-color: rgba(255, 110, 97, 0.6784313725);
+}
+@media (320px <= width <= 575px) {
+  #banner .bannerSlide .bannerBtn {
+    font-size: 14px;
+    padding: 12px 18px;
+  }
+}
+@media (576px <= width <= 767px) {
+  #banner .bannerSlide .bannerBtn {
+    font-size: 16px;
+    padding: 14px 20px;
+  }
 }
 
 nav .navbar-nav li {
@@ -153,15 +165,45 @@ aside .offcanvas-body ul li.active a span svg {
   font-size: 18px;
   font-weight: 600;
 }
+@media (320px <= width <= 575px) {
+  #banner .bannerSlide h4 {
+    font-size: 14px;
+  }
+}
+@media (576px <= width <= 767px) {
+  #banner .bannerSlide h4 {
+    font-size: 16px;
+  }
+}
 #banner .bannerSlide h2 {
   color: #11161E;
   font-size: 64px;
   font-weight: 700;
   margin: 16px 0;
 }
+@media (320px <= width <= 575px) {
+  #banner .bannerSlide h2 {
+    font-size: 36px;
+  }
+}
+@media (576px <= width <= 767px) {
+  #banner .bannerSlide h2 {
+    font-size: 42px;
+  }
+}
 #banner .bannerSlide p {
   color: #11161E;
   font-family: "Roboto", sans-serif;
+}
+@media (320px <= width <= 575px) {
+  #banner .bannerSlide p {
+    font-size: 14px;
+  }
+}
+@media (576px <= width <= 767px) {
+  #banner .bannerSlide p {
+    font-size: 16px;
+  }
 }
 #banner .bannerSlide .bannerCtn {
   opacity: 0;
@@ -171,6 +213,25 @@ aside .offcanvas-body ul li.active a span svg {
 #banner .bannerSlide.slick-active .bannerCtn {
   opacity: 1;
   transform: translateY(0);
+}
+@media (320px <= width <= 575px) {
+  #banner .bannerSlide.slide1 {
+    background-image: url(../images/banner1_mobile.jpg) !important;
+    background-position: center;
+  }
+}
+@media (320px <= width <= 575px) {
+  #banner .bannerSlide {
+    background-position: 80%;
+    background-repeat: no-repeat;
+    height: 400px;
+  }
+}
+@media (576px <= width <= 767px) {
+  #banner .bannerSlide {
+    background-position: 85%;
+    height: 450px;
+  }
 }
 #banner .slick-dots {
   bottom: 120px;
