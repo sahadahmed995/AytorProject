@@ -2,6 +2,7 @@
 #newArrivals{
     padding-bottom: 100px;
     .newArrivalsSlide{
+        padding: 0px 12px;
         .productInfo{
             border: 1px solid #F1F3F4;
             text-align: center;
@@ -103,6 +104,18 @@
                 }
             }
         }
+    }
+    .newArrivalsSlider{
+        position: relative;
+    }
+    .arrow{
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        color: $white;
+        padding: 18px 10px;
+        background-color: rgba(0, 0, 0, 0.5);
     }
 }
 // *newarrivals ends

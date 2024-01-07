@@ -24,4 +24,12 @@ $(function(){
           ]
     })
     // *banner slider ends
+
+    // *NEW product starts
+    $(".newArrivalsSlider").slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      arrows:false,
+    })
+    // *NEW product ends
 })

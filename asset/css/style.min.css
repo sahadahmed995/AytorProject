@@ -317,6 +317,9 @@ aside .offcanvas-body ul li.active a span svg {
 #newArrivals {
   padding-bottom: 100px;
 }
+#newArrivals .newArrivalsSlide {
+  padding: 0px 12px;
+}
 #newArrivals .newArrivalsSlide .productInfo {
   border: 1px solid #F1F3F4;
   text-align: center;
@@ -419,4 +422,16 @@ aside .offcanvas-body ul li.active a span svg {
 #newArrivals .newArrivalsSlide .cardBtn a:last-child span {
   background-color: transparent;
   color: #FF6F61;
+}
+#newArrivals .newArrivalsSlider {
+  position: relative;
+}
+#newArrivals .arrow {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  color: #fff;
+  padding: 18px 10px;
+  background-color: rgba(0, 0, 0, 0.5);
 }
