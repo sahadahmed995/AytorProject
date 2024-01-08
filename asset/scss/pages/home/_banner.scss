@@ -40,7 +40,7 @@
             }
         }
         .bannerBtn{
-            @extend %commonBtn;
+            @include btn(common);
         }
 
         // *content animation sarts

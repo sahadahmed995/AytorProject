@@ -46,7 +46,7 @@ a {
   background-color: #FF6F61;
 }
 
-#banner .bannerSlide .bannerBtn {
+#shopNow .shopNowCtn a, #banner .bannerSlide .bannerBtn {
   display: inline-block;
   color: #fff;
   font-size: 18px;
@@ -56,17 +56,14 @@ a {
   margin: 30px 0;
   transition: 0.35s;
 }
-#banner .bannerSlide .bannerBtn:hover {
-  background-color: rgba(255, 110, 97, 0.6784313725);
-}
 @media (320px <= width <= 575px) {
-  #banner .bannerSlide .bannerBtn {
+  #shopNow .shopNowCtn a, #banner .bannerSlide .bannerBtn {
     font-size: 14px;
     padding: 12px 18px;
   }
 }
 @media (576px <= width <= 767px) {
-  #banner .bannerSlide .bannerBtn {
+  #shopNow .shopNowCtn a, #banner .bannerSlide .bannerBtn {
     font-size: 16px;
     padding: 14px 20px;
   }
@@ -131,7 +128,7 @@ nav .left-icons li a {
 nav .left-icons li a span {
   position: absolute;
   top: -50%;
-  right: -20%;
+  right: -60%;
   z-index: 99;
   width: 15px;
   height: 15px;
@@ -222,6 +219,11 @@ aside .offcanvas-body ul li.active a span svg {
   #banner .bannerSlide p {
     font-size: 16px;
   }
+}
+#banner .bannerSlide .bannerBtn:hover {
+  background-color: transparent;
+  outline: 1px solid #FF6F61;
+  color: #FF6F61;
 }
 #banner .bannerSlide .bannerCtn {
   opacity: 0;
@@ -518,4 +520,49 @@ aside .offcanvas-body ul li.active a span svg {
   #newArrivals .arrow.rightArrow {
     transform: translate(-60%, -50%);
   }
+}
+
+#shopNow {
+  background-image: url(../images/shop_now.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+}
+#shopNow .shopNowCtn {
+  color: #fff;
+}
+#shopNow .shopNowCtn h2 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 46px;
+}
+@media (320px <= width <= 575px) and (320px <= width <= 575px) {
+  #shopNow .shopNowCtn h2 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+@media (320px <= width <= 575px) and (576px <= width <= 767px) {
+  #shopNow .shopNowCtn h2 {
+    font-size: 28px;
+  }
+}
+#shopNow .shopNowCtn p {
+  font-family: Roboto;
+  line-height: 28px;
+  margin: 10px 0px 30px 0;
+}
+@media (320px <= width <= 575px) {
+  #shopNow .shopNowCtn p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+#shopNow .shopNowCtn a {
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+#shopNow .shopNowCtn a:hover {
+  background-color: #fff;
+  color: #11161E;
 }

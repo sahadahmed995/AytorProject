@@ -86,9 +86,6 @@ a{
     background-color: $babyPink;
     margin: 30px 0;
     transition: .35s;
-    &:hover{
-        background-color: $babyPinkOnHover;
-    }
     @include xs(){
         font-size: 14px;
         padding:12px 18px;
@@ -99,6 +96,25 @@ a{
     }
 }
 
+@mixin btn($type:nothing){
+    @if $type == common{
+        @extend %commonBtn;
+        &:hover{
+            background-color: transparent;
+            outline: 1px solid $babyPink;
+            color: $babyPink;
+        }
+    }
+    @else{
+        @extend %commonBtn;
+        background-color: transparent;
+        border: 1px solid $white;
+        &:hover{
+            background-color: $white;
+            color: $textColor;
+        }
+    }
+}
 // *common btn ends
 
 // *common hedding starts
