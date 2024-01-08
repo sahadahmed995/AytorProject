@@ -46,14 +46,6 @@ a {
   background-color: #FF6F61;
 }
 
-.hedding h1 {
-  color: #11161E;
-  text-align: center;
-  font-size: 36px;
-  font-weight: 700;
-  margin-bottom: 25px;
-}
-
 #banner .bannerSlide .bannerBtn {
   display: inline-block;
   color: #fff;
@@ -77,6 +69,24 @@ a {
   #banner .bannerSlide .bannerBtn {
     font-size: 16px;
     padding: 14px 20px;
+  }
+}
+
+.hedding h1 {
+  color: #11161E;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+@media (320px <= width <= 575px) {
+  .hedding h1 {
+    font-size: 24px;
+  }
+}
+@media (576px <= width <= 767px) {
+  .hedding h1 {
+    font-size: 28px;
   }
 }
 
@@ -120,8 +130,8 @@ nav .left-icons li a {
 }
 nav .left-icons li a span {
   position: absolute;
-  top: -30%;
-  right: -60%;
+  top: -50%;
+  right: -20%;
   z-index: 99;
   width: 15px;
   height: 15px;
@@ -320,6 +330,16 @@ aside .offcanvas-body ul li.active a span svg {
 #newArrivals .newArrivalsSlide {
   padding: 0px 12px;
 }
+@media (320px <= width <= 575px) {
+  #newArrivals .newArrivalsSlide {
+    padding: 0px 7px;
+  }
+}
+@media (320px <= width <= 350px) {
+  #newArrivals .newArrivalsSlide {
+    padding: 0px 5px;
+  }
+}
 #newArrivals .newArrivalsSlide .productInfo {
   border: 1px solid #F1F3F4;
   text-align: center;
@@ -337,17 +357,18 @@ aside .offcanvas-body ul li.active a span svg {
 }
 @media (320px <= width <= 575px) {
   #newArrivals .newArrivalsSlide .productInfo p {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 #newArrivals .newArrivalsSlide .productInfo h4 {
   font-size: 18px;
   font-weight: 600;
   margin: 5px 0px 10px 0;
+  text-transform: capitalize;
 }
 @media (320px <= width <= 575px) {
   #newArrivals .newArrivalsSlide .productInfo h4 {
-    font-size: 16px;
+    font-size: 14px;
     margin-bottom: 5px;
   }
 }
@@ -371,10 +392,15 @@ aside .offcanvas-body ul li.active a span svg {
   color: #fff;
   background-color: #FF6F61;
   padding: 0px 9px;
-  transform: rotate(-90deg) translateX(-30%);
+  transform: rotate(-90deg) translateX(-25%);
   z-index: 999;
   border-radius: 13px 0 0 13px;
   font-size: 16px;
+}
+@media (320px <= width <= 575px) {
+  #newArrivals .newArrivalsSlide .image p {
+    font-size: 12px;
+  }
 }
 #newArrivals .newArrivalsSlide .image .overly {
   position: absolute;
@@ -412,26 +438,84 @@ aside .offcanvas-body ul li.active a span svg {
   text-align: center;
 }
 #newArrivals .newArrivalsSlide .cardBtn a span {
-  font-size: 16px;
+  font-size: 14px;
   background-color: #FF6F61;
   color: #fff;
   display: block;
-  padding: 5px 0;
+  padding: 3px 0;
   border: 1px solid #FF6F61;
+}
+@media (576px <= width <= 767px) {
+  #newArrivals .newArrivalsSlide .cardBtn a span {
+    padding: 5px 0;
+    font-size: 16px;
+  }
+}
+@media (768px <= width <= 991px) {
+  #newArrivals .newArrivalsSlide .cardBtn a span {
+    padding: 5px 0;
+    font-size: 16px;
+  }
 }
 #newArrivals .newArrivalsSlide .cardBtn a:last-child span {
   background-color: transparent;
   color: #FF6F61;
 }
-#newArrivals .newArrivalsSlider {
+#newArrivals .mySlide {
   position: relative;
+}
+#newArrivals .mySlide:hover .arrow {
+  opacity: 1;
+  visibility: visible;
 }
 #newArrivals .arrow {
   display: block;
   position: absolute;
-  left: 0;
-  top: 50%;
+  top: 40%;
   color: #fff;
   padding: 18px 10px;
   background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.35s;
+}
+@media (320px <= width <= 575px) {
+  #newArrivals .arrow {
+    padding: 12px 10px;
+    font-size: 14px;
+  }
+}
+@media (320px <= width <= 991px) {
+  #newArrivals .arrow {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+#newArrivals .arrow.leftArrow {
+  left: 0%;
+  transform: translate(80%, -50%);
+}
+@media (320px <= width <= 575px) {
+  #newArrivals .arrow.leftArrow {
+    transform: translate(65%, -50%);
+  }
+}
+@media (320px <= width <= 350px) {
+  #newArrivals .arrow.leftArrow {
+    transform: translate(60%, -50%);
+  }
+}
+#newArrivals .arrow.rightArrow {
+  right: 0%;
+  transform: translate(-80%, -50%);
+}
+@media (320px <= width <= 575px) {
+  #newArrivals .arrow.rightArrow {
+    transform: translate(-65%, -50%);
+  }
+}
+@media (320px <= width <= 350px) {
+  #newArrivals .arrow.rightArrow {
+    transform: translate(-60%, -50%);
+  }
 }

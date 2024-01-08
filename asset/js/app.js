@@ -14,9 +14,11 @@ $(function(){
         dotsClass: "container slick-dots",
         autoplay: true,
         autoplaySpeed: 3000,
+        pauseOnHover:false,
+        pauseOnFocus:false,
         responsive: [
             {
-              breakpoint: 991,
+              breakpoint: 992,
               settings: {
                 dots:false,
               }
@@ -29,7 +31,19 @@ $(function(){
     $(".newArrivalsSlider").slick({
       slidesToShow: 4,
       slidesToScroll: 1,
-      arrows:false,
+      arrows:true,
+      prevArrow:".leftArrow",
+      nextArrow:".rightArrow",
+      autoplay:true,
+      autoplaySpeed: 1500,
+      responsive: [
+        {
+          breakpoint: 992,
+          settings:{
+            slidesToShow: 2,
+          },
+        },
+      ]
     })
     // *NEW product ends
 })

@@ -3,6 +3,12 @@
     padding-bottom: 100px;
     .newArrivalsSlide{
         padding: 0px 12px;
+        @include xs(){
+            padding: 0px 7px;
+        }
+        @include custom(320px, 350px){
+            padding: 0px 5px;
+        }
         .productInfo{
             border: 1px solid #F1F3F4;
             text-align: center;
@@ -15,15 +21,16 @@
             p{
                 color: $grayColor;
                 @include xs(){
-                    font-size: 14px;
+                    font-size: 12px;
                 }
             }
             h4{
                 font-size: 18px;
                 font-weight: 600;
                 margin: 5px 0px 10px 0;
+                text-transform: capitalize;
                 @include xs(){
-                    font-size: 16px;
+                    font-size: 14px;
                     margin-bottom: 5px;
                 }
             }
@@ -45,10 +52,13 @@
                 color: $white;
                 background-color: $babyPink;
                 padding: 0px 9px;
-                transform: rotate(-90deg) translateX(-30%);
+                transform: rotate(-90deg) translateX(-25%);
                 z-index: 999;
                 border-radius: 13px 0 0 13px;
                 font-size: 16px;
+                @include xs(){
+                    font-size: 12px;
+                }
             }
             .overly{
                 position: absolute;
@@ -91,12 +101,20 @@
                 padding: 0;
                 text-align: center;
                 span{
-                    font-size: 16px;
+                    font-size: 14px;
                     background-color: $babyPink;
                     color: $white;
                     display: block;
-                    padding:5px 0;
+                    padding:3px 0;
                     border: 1px solid $babyPink;
+                    @include sm(){
+                        padding: 5px 0;
+                        font-size: 16px;
+                    }
+                    @include md(){
+                        padding: 5px 0;
+                        font-size: 16px;
+                    }
                 }
                 &:last-child span{
                     background-color: transparent;
@@ -105,17 +123,51 @@
             }
         }
     }
-    .newArrivalsSlider{
+    .mySlide{
         position: relative;
+        &:hover .arrow{
+            opacity: 1;
+            visibility: visible;
+        }
     }
     .arrow{
         display: block;
         position: absolute;
-        left: 0;
-        top: 50%;
+        top: 40%;
         color: $white;
         padding: 18px 10px;
         background-color: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        visibility: hidden;
+        transition: .35s;
+        @include xs(){
+            padding: 12px 10px;
+            font-size: 14px;
+        }
+        @include custom(){
+            opacity: 1;
+            visibility: visible;
+        }
+        &.leftArrow{
+            left: 0%;
+            transform: translate(80%,-50%);
+            @include xs(){
+                transform: translate(65%,-50%);
+            }
+            @include custom(320px,350px){
+                transform: translate(60%,-50%);
+            }
+        }
+        &.rightArrow{
+            right: 0%;
+            transform: translate(-80%,-50%);
+            @include xs(){
+                transform: translate(-65%,-50%);
+            }
+            @include custom(320px,350px){
+                transform: translate(-60%,-50%);
+            }
+        }
     }
 }
 // *newarrivals ends

@@ -47,18 +47,6 @@ a{
 
 // *commonDots ends
 
-// *common hedding starts
-.hedding{
-    h1{
-        color: $textColor;
-        text-align: center;
-        font-size: 36px;
-        font-weight: 700;
-        margin-bottom: 25px;
-    }
-}
-// *common hedding ends
-
 // *common media starts
 @mixin xs() {
     @media (320px <= width <= 575px) {
@@ -112,3 +100,21 @@ a{
 }
 
 // *common btn ends
+
+// *common hedding starts
+.hedding{
+    h1{
+        color: $textColor;
+        text-align: center;
+        font-size: 36px;
+        font-weight: 700;
+        margin-bottom: 25px;
+        @include xs(){
+            font-size: 24px;
+        }
+        @include sm(){
+            font-size: 28px;
+        }
+    }
+}
+// *common hedding ends
