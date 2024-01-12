@@ -1,21 +1,23 @@
-// *newarrivals starts
-#newArrivals{
-    padding-bottom: 100px;
+// *best seller starts
+#bestSeller{
+    padding: 100px 0;
     @include xs(){
-        padding-bottom: 50px;
+        padding: 50px 0;
     }
     @include sm(){
-        padding-bottom: 80px;
+        padding: 80px 0;
     }
-    .newArrivalsSlide{
+    .bestSellerProduct{
         padding: 0px 12px;
+        overflow: hidden;
+        align-self: normal;
         @include xs(){
             padding: 0px 7px;
         }
         @include custom(320px, 350px){
             padding: 0px 5px;
         }
-        .productInfo{
+        .bestSellerCtn{
             border: 1px solid #F1F3F4;
             text-align: center;
             color: $textColor;
@@ -129,51 +131,19 @@
             }
         }
     }
-    .mySlide{
-        position: relative;
-        &:hover .arrow{
-            opacity: 1;
-            visibility: visible;
-        }
-    }
-    .arrow{
-        display: block;
-        position: absolute;
-        top: 40%;
-        color: $white;
-        padding: 18px 10px;
-        background-color: rgba(0, 0, 0, 0.5);
-        opacity: 0;
-        visibility: hidden;
-        transition: .35s;
-        @include xs(){
-            padding: 12px 10px;
-            font-size: 14px;
-        }
-        @include custom(){
-            opacity: 1;
-            visibility: visible;
-        }
-        &.leftArrow{
-            left: 0%;
-            transform: translate(80%,-50%);
-            @include xs(){
-                transform: translate(65%,-50%);
-            }
-            @include custom(320px,350px){
-                transform: translate(60%,-50%);
-            }
-        }
-        &.rightArrow{
-            right: 0%;
-            transform: translate(-80%,-50%);
-            @include xs(){
-                transform: translate(-65%,-50%);
-            }
-            @include custom(320px,350px){
-                transform: translate(-60%,-50%);
-            }
+    .bestSellerBtn{
+        text-align: center;
+        a{
+            @include btn(common){
+                padding: 13px 27px;
+                @include xs(){
+                    padding: 12px 18px;
+                }
+                @include sm(){
+                    padding: 12px 22px;
+                }
+            };
         }
     }
 }
-// *newarrivals ends
+// *best seller ends

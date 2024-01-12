@@ -99,6 +99,7 @@ a{
 @mixin btn($type:nothing){
     @if $type == common{
         @extend %commonBtn;
+        @content;
         &:hover{
             background-color: transparent;
             outline: 1px solid $babyPink;
@@ -107,6 +108,7 @@ a{
     }
     @else{
         @extend %commonBtn;
+        @content;
         background-color: transparent;
         border: 1px solid $white;
         &:hover{
