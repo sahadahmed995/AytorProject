@@ -46,4 +46,13 @@ $(function(){
       ]
     })
     // *NEW product ends
+
+    // deal fo the day starts
+    $(".dealBody").slick({
+      slidesToShow: 2,
+      slidesToScroll: 2,
+      dots:true,
+      arrows:false,
+    });
+    // deal fo the day ends
 })

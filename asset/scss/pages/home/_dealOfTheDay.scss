@@ -1,0 +1,51 @@
+// *dealOfTheDay starts
+#dealOfTheDay{
+    .slick-dots{
+        @extend %commonDots;
+        bottom: 20px;
+        li{
+            button{
+                background-color: #BDBDBD;
+            }
+            &.slick-active button{
+                background-color: #151A32;
+            }
+        }
+    }
+    padding-bottom: 85px;
+    .dealBody{
+        box-shadow: 0px 0px 70px 0px rgba(21, 26, 50, 0.08);
+        padding: 75px 0px 85px 0;
+        .dealCtn{
+            background-position: center;
+            background-size: cover;
+            padding: 35px 100px 120px 40px;
+            color: $textColor;
+            margin: 0 33px;
+            h4{
+                font-size: 18px;
+                font-weight: 600;
+            }
+            h2{
+                font-size: 36px;
+                font-weight: 700;
+                margin: 10px 0;
+            }
+            p{
+                font-family: $secFont;
+                color: $grayColor;
+            }
+            h6{
+                margin: 25px 0;
+                span{
+                    color: $grayColor;
+                    text-decoration: line-through;
+                }
+            }
+            a{
+                @include btn(common)
+            }
+        }
+    }
+}
+// *dealOfTheDay ends

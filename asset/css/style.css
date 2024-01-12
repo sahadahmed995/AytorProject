@@ -21,16 +21,16 @@ a {
   text-decoration: none;
 }
 
-#banner .slick-dots {
+#dealOfTheDay .slick-dots, #banner .slick-dots {
   position: absolute;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
 }
-#banner .slick-dots li {
+#dealOfTheDay .slick-dots li, #banner .slick-dots li {
   display: inline-block;
 }
-#banner .slick-dots li button {
+#dealOfTheDay .slick-dots li button, #banner .slick-dots li button {
   background-color: #fff;
   border: none;
   color: transparent;
@@ -41,12 +41,12 @@ a {
   border-radius: 5px;
   transition: 0.35s;
 }
-#banner .slick-dots li.slick-active button {
+#dealOfTheDay .slick-dots li.slick-active button, #banner .slick-dots li.slick-active button {
   width: 28.364px;
   background-color: #FF6F61;
 }
 
-#bestSeller .bestSellerBtn a, #shopNow .shopNowCtn a, #banner .bannerSlide .bannerBtn {
+#dealOfTheDay .dealBody .dealCtn a, #bestSeller .bestSellerBtn a, #shopNow .shopNowCtn a, #banner .bannerSlide .bannerBtn {
   display: inline-block;
   color: #fff;
   font-size: 18px;
@@ -57,13 +57,13 @@ a {
   transition: 0.35s;
 }
 @media (320px <= width <= 575px) {
-  #bestSeller .bestSellerBtn a, #shopNow .shopNowCtn a, #banner .bannerSlide .bannerBtn {
+  #dealOfTheDay .dealBody .dealCtn a, #bestSeller .bestSellerBtn a, #shopNow .shopNowCtn a, #banner .bannerSlide .bannerBtn {
     font-size: 14px;
     padding: 12px 18px;
   }
 }
 @media (576px <= width <= 767px) {
-  #bestSeller .bestSellerBtn a, #shopNow .shopNowCtn a, #banner .bannerSlide .bannerBtn {
+  #dealOfTheDay .dealBody .dealCtn a, #bestSeller .bestSellerBtn a, #shopNow .shopNowCtn a, #banner .bannerSlide .bannerBtn {
     font-size: 16px;
     padding: 14px 20px;
   }
@@ -754,6 +754,55 @@ aside .offcanvas-body ul li.active a span svg {
   }
 }
 #bestSeller .bestSellerBtn a:hover {
+  background-color: transparent;
+  outline: 1px solid #FF6F61;
+  color: #FF6F61;
+}
+
+#dealOfTheDay {
+  padding-bottom: 85px;
+}
+#dealOfTheDay .slick-dots {
+  bottom: 20px;
+}
+#dealOfTheDay .slick-dots li button {
+  background-color: #BDBDBD;
+}
+#dealOfTheDay .slick-dots li.slick-active button {
+  background-color: #151A32;
+}
+#dealOfTheDay .dealBody {
+  box-shadow: 0px 0px 70px 0px rgba(21, 26, 50, 0.08);
+  padding: 75px 0px 85px 0;
+}
+#dealOfTheDay .dealBody .dealCtn {
+  background-position: center;
+  background-size: cover;
+  padding: 35px 100px 120px 40px;
+  color: #11161E;
+  margin: 0 33px;
+}
+#dealOfTheDay .dealBody .dealCtn h4 {
+  font-size: 18px;
+  font-weight: 600;
+}
+#dealOfTheDay .dealBody .dealCtn h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 10px 0;
+}
+#dealOfTheDay .dealBody .dealCtn p {
+  font-family: "Roboto", sans-serif;
+  color: #444;
+}
+#dealOfTheDay .dealBody .dealCtn h6 {
+  margin: 25px 0;
+}
+#dealOfTheDay .dealBody .dealCtn h6 span {
+  color: #444;
+  text-decoration: line-through;
+}
+#dealOfTheDay .dealBody .dealCtn a:hover {
   background-color: transparent;
   outline: 1px solid #FF6F61;
   color: #FF6F61;
