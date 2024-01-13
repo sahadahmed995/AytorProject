@@ -3,6 +3,12 @@
     .slick-dots{
         @extend %commonDots;
         bottom: 20px;
+        @include xs(){
+            bottom: 3px;
+        };
+        @include sm(){
+            bottom: 5px;
+        }
         li{
             button{
                 background-color: #BDBDBD;
@@ -13,27 +19,53 @@
         }
     }
     padding-bottom: 85px;
+    @include xs(){
+        padding-bottom: 50px;
+    };
     .dealBody{
         box-shadow: 0px 0px 70px 0px rgba(21, 26, 50, 0.08);
         padding: 75px 0px 85px 0;
+        @include xs(){
+            padding: 40px 0;
+        };
+        @include sm(){
+            padding: 60px 0;
+        }
         .dealCtn{
             background-position: center;
             background-size: cover;
             padding: 35px 100px 120px 40px;
             color: $textColor;
             margin: 0 33px;
+            @include xs(){
+                margin: 0px 15px;
+                padding: 15px 20px;
+            };
+            @include sm(){
+                margin:0 25px;
+                padding: 25px 30px;
+            }
             h4{
                 font-size: 18px;
                 font-weight: 600;
+                @include xs(){
+                    font-size: 16px;
+                }
             }
             h2{
                 font-size: 36px;
                 font-weight: 700;
                 margin: 10px 0;
+                @include xs(){
+                    font-size: 26px;
+                }
             }
             p{
                 font-family: $secFont;
                 color: $grayColor;
+                @include xs(){
+                    font-size: 14px;
+                }
             }
             h6{
                 margin: 25px 0;
@@ -41,9 +73,19 @@
                     color: $grayColor;
                     text-decoration: line-through;
                 }
+                @include xs(){
+                    font-size: 14px;
+                    margin: 10px 0;
+                }
+                @include sm(){
+                    margin: 15px 0;
+                }
             }
             a{
-                @include btn(common)
+                @include btn(common);
+                @include xs(){
+                    margin: 15px 0;
+                }
             }
         }
     }

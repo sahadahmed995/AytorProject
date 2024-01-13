@@ -765,15 +765,40 @@ aside .offcanvas-body ul li.active a span svg {
 #dealOfTheDay .slick-dots {
   bottom: 20px;
 }
+@media (320px <= width <= 575px) {
+  #dealOfTheDay .slick-dots {
+    bottom: 3px;
+  }
+}
+@media (576px <= width <= 767px) {
+  #dealOfTheDay .slick-dots {
+    bottom: 5px;
+  }
+}
 #dealOfTheDay .slick-dots li button {
   background-color: #BDBDBD;
 }
 #dealOfTheDay .slick-dots li.slick-active button {
   background-color: #151A32;
 }
+@media (320px <= width <= 575px) {
+  #dealOfTheDay {
+    padding-bottom: 50px;
+  }
+}
 #dealOfTheDay .dealBody {
   box-shadow: 0px 0px 70px 0px rgba(21, 26, 50, 0.08);
   padding: 75px 0px 85px 0;
+}
+@media (320px <= width <= 575px) {
+  #dealOfTheDay .dealBody {
+    padding: 40px 0;
+  }
+}
+@media (576px <= width <= 767px) {
+  #dealOfTheDay .dealBody {
+    padding: 60px 0;
+  }
 }
 #dealOfTheDay .dealBody .dealCtn {
   background-position: center;
@@ -782,18 +807,45 @@ aside .offcanvas-body ul li.active a span svg {
   color: #11161E;
   margin: 0 33px;
 }
+@media (320px <= width <= 575px) {
+  #dealOfTheDay .dealBody .dealCtn {
+    margin: 0px 15px;
+    padding: 15px 20px;
+  }
+}
+@media (576px <= width <= 767px) {
+  #dealOfTheDay .dealBody .dealCtn {
+    margin: 0 25px;
+    padding: 25px 30px;
+  }
+}
 #dealOfTheDay .dealBody .dealCtn h4 {
   font-size: 18px;
   font-weight: 600;
+}
+@media (320px <= width <= 575px) {
+  #dealOfTheDay .dealBody .dealCtn h4 {
+    font-size: 16px;
+  }
 }
 #dealOfTheDay .dealBody .dealCtn h2 {
   font-size: 36px;
   font-weight: 700;
   margin: 10px 0;
 }
+@media (320px <= width <= 575px) {
+  #dealOfTheDay .dealBody .dealCtn h2 {
+    font-size: 26px;
+  }
+}
 #dealOfTheDay .dealBody .dealCtn p {
   font-family: "Roboto", sans-serif;
   color: #444;
+}
+@media (320px <= width <= 575px) {
+  #dealOfTheDay .dealBody .dealCtn p {
+    font-size: 14px;
+  }
 }
 #dealOfTheDay .dealBody .dealCtn h6 {
   margin: 25px 0;
@@ -802,8 +854,24 @@ aside .offcanvas-body ul li.active a span svg {
   color: #444;
   text-decoration: line-through;
 }
+@media (320px <= width <= 575px) {
+  #dealOfTheDay .dealBody .dealCtn h6 {
+    font-size: 14px;
+    margin: 10px 0;
+  }
+}
+@media (576px <= width <= 767px) {
+  #dealOfTheDay .dealBody .dealCtn h6 {
+    margin: 15px 0;
+  }
+}
 #dealOfTheDay .dealBody .dealCtn a:hover {
   background-color: transparent;
   outline: 1px solid #FF6F61;
   color: #FF6F61;
+}
+@media (320px <= width <= 575px) {
+  #dealOfTheDay .dealBody .dealCtn a {
+    margin: 15px 0;
+  }
 }
