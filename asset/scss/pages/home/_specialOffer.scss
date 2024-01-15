@@ -1,0 +1,89 @@
+// *special offer starts
+#specialOffer{
+    background-color: #F1F3F4;
+    .left{
+        .spOfferCtn{
+            color: $textColor;
+            margin: 80px 0;
+            @include xs(){
+                margin: 40px 0;
+            }
+            @include sm(){
+                margin: 60px 0;   
+            }
+        }
+        h4{
+            color: $grayColor;
+            font-size: 16px;
+            font-weight: 400;
+            @include xs(){
+                font-size: 14px;
+            }
+        }
+        h2{
+            font-size: 36px;
+            font-weight: 700;
+            margin: 10px 0px 16px 0;
+            @include xs(){
+                font-size: 22px;
+                margin: 10px 0;
+            }
+            @include sm(){
+                font-size: 30px;
+                margin: 10px 0;
+            }
+        }
+        p{
+            color: $grayColor;
+            font-family: $secFont;
+            margin-bottom: 30px;
+            @include xs(){
+                font-size: 14px;
+                margin-bottom: 20px;
+            }
+        }
+        a{
+            @include btn(common);
+            margin: 0;
+        }
+    }
+    .right{
+        margin-left: auto;
+        img{
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            position: relative;
+            @include custom(320px,991px){
+                width: 100%;
+            }
+        }
+        span{
+            display: block;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            line-height: 60px;
+            text-align: center;
+            position: absolute;
+            background-color: $white;
+            color: $babyPink;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 22%;
+            z-index: 99;
+            @include xs(){
+                width: 35px;
+                height: 35px;
+                line-height: 35px;
+            }
+            @include custom(320px, 991px){
+                right: 50%;
+                transform: translateX(50%);
+                top: 22%;
+            }
+        }
+    }
+}
+// *special offer ends

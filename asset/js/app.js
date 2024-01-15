@@ -1,5 +1,9 @@
 $(function(){
 
+  // aos starts
+  AOS.init();
+  // aos ends
+
     // *nav starts
     $(".navbar-nav li").click(function(){
         $(this).siblings().removeClass("active")
@@ -14,6 +18,7 @@ $(function(){
         dotsClass: "container slick-dots",
         autoplay: true,
         autoplaySpeed: 3000,
+        speed:1000,
         pauseOnHover:false,
         pauseOnFocus:false,
         responsive: [
@@ -48,7 +53,7 @@ $(function(){
     // *NEW product ends
 
     // deal fo the day starts
-    $(".dealBody").slick({
+    $(".dealSlider").slick({
       slidesToShow: 2,
       slidesToScroll: 2,
       dots:true,
@@ -65,5 +70,16 @@ $(function(){
         },
       ]
     });
+
+
+    // Deal Of The Day CountDown Starts
+    $('.timer').countdown('2024/02/10', function(event) {
+      $('.timer .sec').html(event.strftime('%S'));
+      $('.timer .min').html(event.strftime('%M'));
+      $('.timer .hour').html(event.strftime('%H'));
+      $('.timer .day').html(event.strftime('%D'));
+    })
+    // Deal Of The Day CountDown Ends 
+    
     // deal fo the day ends
 })

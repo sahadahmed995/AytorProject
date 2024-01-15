@@ -46,7 +46,7 @@ a {
   background-color: #FF6F61;
 }
 
-#dealOfTheDay .dealBody .dealCtn a, #bestSeller .bestSellerBtn a, #shopNow .shopNowCtn a, #banner .bannerSlide .bannerBtn {
+#specialOffer .left a, #dealOfTheDay .dealBody .dealCtn a, #bestSeller .bestSellerBtn a, #shopNow .shopNowCtn a, #banner .bannerSlide .bannerBtn {
   display: inline-block;
   color: #fff;
   font-size: 18px;
@@ -57,13 +57,13 @@ a {
   transition: 0.35s;
 }
 @media (320px <= width <= 575px) {
-  #dealOfTheDay .dealBody .dealCtn a, #bestSeller .bestSellerBtn a, #shopNow .shopNowCtn a, #banner .bannerSlide .bannerBtn {
+  #specialOffer .left a, #dealOfTheDay .dealBody .dealCtn a, #bestSeller .bestSellerBtn a, #shopNow .shopNowCtn a, #banner .bannerSlide .bannerBtn {
     font-size: 14px;
     padding: 12px 18px;
   }
 }
 @media (576px <= width <= 767px) {
-  #dealOfTheDay .dealBody .dealCtn a, #bestSeller .bestSellerBtn a, #shopNow .shopNowCtn a, #banner .bannerSlide .bannerBtn {
+  #specialOffer .left a, #dealOfTheDay .dealBody .dealCtn a, #bestSeller .bestSellerBtn a, #shopNow .shopNowCtn a, #banner .bannerSlide .bannerBtn {
     font-size: 16px;
     padding: 14px 20px;
   }
@@ -228,11 +228,21 @@ aside .offcanvas-body ul li.active a span svg {
 #banner .bannerSlide .bannerCtn {
   opacity: 0;
   transform: translateY(-100%);
-  transition: 1s;
 }
 #banner .bannerSlide.slick-active .bannerCtn {
   opacity: 1;
   transform: translateY(0);
+  animation: bannerAnimation 2s;
+}
+@keyframes bannerAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
 }
 @media (320px <= width <= 575px) {
   #banner .bannerSlide.slide1 {
@@ -763,16 +773,16 @@ aside .offcanvas-body ul li.active a span svg {
   padding-bottom: 85px;
 }
 #dealOfTheDay .slick-dots {
-  bottom: 20px;
+  bottom: -70px;
 }
 @media (320px <= width <= 575px) {
   #dealOfTheDay .slick-dots {
-    bottom: 3px;
+    bottom: -50px;
   }
 }
 @media (576px <= width <= 767px) {
   #dealOfTheDay .slick-dots {
-    bottom: 5px;
+    bottom: -60px;
   }
 }
 #dealOfTheDay .slick-dots li button {
@@ -788,17 +798,89 @@ aside .offcanvas-body ul li.active a span svg {
 }
 #dealOfTheDay .dealBody {
   box-shadow: 0px 0px 70px 0px rgba(21, 26, 50, 0.08);
-  padding: 75px 0px 85px 0;
+  padding: 0px 0px 85px 0;
+  margin-top: 70px;
 }
 @media (320px <= width <= 575px) {
   #dealOfTheDay .dealBody {
-    padding: 40px 0;
+    padding: 0px 0px 60px 0;
   }
 }
 @media (576px <= width <= 767px) {
   #dealOfTheDay .dealBody {
-    padding: 60px 0;
+    padding: 0px 0px 70px 0;
   }
+}
+#dealOfTheDay .dealBody .timer {
+  margin: auto;
+  width: 425px;
+  max-width: 90%;
+  border-radius: 40px;
+  box-shadow: 0px 0px 10px 0px rgba(21, 26, 50, 0.1);
+  background-color: #fff;
+  transform: translateY(-50%);
+  padding: 10px 0;
+}
+#dealOfTheDay .dealBody .timer ul {
+  text-align: center;
+}
+#dealOfTheDay .dealBody .timer ul li {
+  display: inline-block;
+  padding: 0 22px;
+  position: relative;
+  color: #444;
+}
+@media (320px <= width <= 575px) {
+  #dealOfTheDay .dealBody .timer ul li {
+    font-size: 14px;
+    padding: 0px 12px;
+  }
+}
+#dealOfTheDay .dealBody .timer ul li span {
+  display: block;
+  color: var(--Text-Color, #11161E);
+  font-size: 24px;
+  font-weight: 700;
+}
+@media (320px <= width <= 575px) {
+  #dealOfTheDay .dealBody .timer ul li span {
+    font-size: 18px;
+  }
+}
+@media (576px <= width <= 767px) {
+  #dealOfTheDay .dealBody .timer ul li span {
+    font-size: 20px;
+  }
+}
+#dealOfTheDay .dealBody .timer ul li::before, #dealOfTheDay .dealBody .timer ul li::after {
+  content: "";
+  position: absolute;
+  top: 30%;
+  right: 0;
+  transform: translateX(50%);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #FF6F61;
+}
+@media (320px <= width <= 575px) {
+  #dealOfTheDay .dealBody .timer ul li::before, #dealOfTheDay .dealBody .timer ul li::after {
+    top: 25%;
+    width: 4px;
+    height: 4px;
+  }
+}
+#dealOfTheDay .dealBody .timer ul li::after {
+  top: unset;
+  bottom: 30%;
+}
+@media (320px <= width <= 575px) {
+  #dealOfTheDay .dealBody .timer ul li::after {
+    bottom: 25%;
+  }
+}
+#dealOfTheDay .dealBody .timer ul li:last-child::before, #dealOfTheDay .dealBody .timer ul li:last-child::after {
+  display: none;
 }
 #dealOfTheDay .dealBody .dealCtn {
   background-position: center;
@@ -873,5 +955,113 @@ aside .offcanvas-body ul li.active a span svg {
 @media (320px <= width <= 575px) {
   #dealOfTheDay .dealBody .dealCtn a {
     margin: 15px 0;
+  }
+}
+
+#specialOffer {
+  background-color: #F1F3F4;
+}
+#specialOffer .left .spOfferCtn {
+  color: #11161E;
+  margin: 80px 0;
+}
+@media (320px <= width <= 575px) {
+  #specialOffer .left .spOfferCtn {
+    margin: 40px 0;
+  }
+}
+@media (576px <= width <= 767px) {
+  #specialOffer .left .spOfferCtn {
+    margin: 60px 0;
+  }
+}
+#specialOffer .left h4 {
+  color: #444;
+  font-size: 16px;
+  font-weight: 400;
+}
+@media (320px <= width <= 575px) {
+  #specialOffer .left h4 {
+    font-size: 14px;
+  }
+}
+#specialOffer .left h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 10px 0px 16px 0;
+}
+@media (320px <= width <= 575px) {
+  #specialOffer .left h2 {
+    font-size: 22px;
+    margin: 10px 0;
+  }
+}
+@media (576px <= width <= 767px) {
+  #specialOffer .left h2 {
+    font-size: 30px;
+    margin: 10px 0;
+  }
+}
+#specialOffer .left p {
+  color: #444;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 30px;
+}
+@media (320px <= width <= 575px) {
+  #specialOffer .left p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+}
+#specialOffer .left a {
+  margin: 0;
+}
+#specialOffer .left a:hover {
+  background-color: transparent;
+  outline: 1px solid #FF6F61;
+  color: #FF6F61;
+}
+#specialOffer .right {
+  margin-left: auto;
+}
+#specialOffer .right img {
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+@media (320px <= width <= 991px) {
+  #specialOffer .right img {
+    width: 100%;
+  }
+}
+#specialOffer .right span {
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  line-height: 60px;
+  text-align: center;
+  position: absolute;
+  background-color: #fff;
+  color: #FF6F61;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 22%;
+  z-index: 99;
+}
+@media (320px <= width <= 575px) {
+  #specialOffer .right span {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+  }
+}
+@media (320px <= width <= 991px) {
+  #specialOffer .right span {
+    right: 50%;
+    transform: translateX(50%);
+    top: 22%;
   }
 }
