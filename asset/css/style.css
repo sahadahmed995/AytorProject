@@ -1025,20 +1025,22 @@ aside .offcanvas-body ul li.active a span svg {
 #specialOffer .right {
   margin-left: auto;
   position: absolute;
-  padding-right: 0;
+  padding: 0;
   top: 0;
   right: 0;
   height: 100%;
 }
+@media (320px <= width <= 991px) {
+  #specialOffer .right {
+    position: static;
+  }
+}
 #specialOffer .right img {
   width: 100%;
   height: 100%;
-  position: relative;
 }
-@media (320px <= width <= 991px) {
-  #specialOffer .right img {
-    width: 100%;
-  }
+#specialOffer .right a {
+  position: relative;
 }
 #specialOffer .right span {
   display: block;
@@ -1071,6 +1073,9 @@ aside .offcanvas-body ul li.active a span svg {
 #specialOffer .right span::after {
   animation-delay: 0.5s;
 }
+#specialOffer .right span:hover::before, #specialOffer .right span:hover::after {
+  animation: none;
+}
 @keyframes playBtn {
   0% {
     transform: scale(0);
@@ -1079,12 +1084,5 @@ aside .offcanvas-body ul li.active a span svg {
   100% {
     transform: scale(1);
     opacity: 0;
-  }
-}
-@media (320px <= width <= 575px) {
-  #specialOffer .right span {
-    width: 35px;
-    height: 35px;
-    line-height: 35px;
   }
 }
