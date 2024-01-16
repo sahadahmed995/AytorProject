@@ -960,6 +960,7 @@ aside .offcanvas-body ul li.active a span svg {
 
 #specialOffer {
   background-color: #F1F3F4;
+  position: relative;
 }
 #specialOffer .left .spOfferCtn {
   color: #11161E;
@@ -1023,10 +1024,13 @@ aside .offcanvas-body ul li.active a span svg {
 }
 #specialOffer .right {
   margin-left: auto;
-}
-#specialOffer .right img {
+  position: absolute;
+  padding-right: 0;
   top: 0;
   right: 0;
+  height: 100%;
+}
+#specialOffer .right img {
   width: 100%;
   height: 100%;
   position: relative;
@@ -1047,21 +1051,40 @@ aside .offcanvas-body ul li.active a span svg {
   background-color: #fff;
   color: #FF6F61;
   top: 50%;
-  transform: translateY(-50%);
-  right: 22%;
-  z-index: 99;
+  transform: translateY(-50%) translateX(50%);
+  right: 50%;
+}
+#specialOffer .right span::before, #specialOffer .right span::after {
+  content: "";
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  opacity: 0.4;
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+  top: -20px;
+  left: -20px;
+  animation: playBtn 2s linear;
+  animation-iteration-count: infinite;
+}
+#specialOffer .right span::after {
+  animation-delay: 0.5s;
+}
+@keyframes playBtn {
+  0% {
+    transform: scale(0);
+    opacity: 2;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
 }
 @media (320px <= width <= 575px) {
   #specialOffer .right span {
     width: 35px;
     height: 35px;
     line-height: 35px;
-  }
-}
-@media (320px <= width <= 991px) {
-  #specialOffer .right span {
-    right: 50%;
-    transform: translateX(50%);
-    top: 22%;
   }
 }
