@@ -1,0 +1,79 @@
+// *Latest News starts
+#latestNews{
+    padding: 150px 0;
+    @include xs(){
+        padding: 50px 0;
+    }
+    @include sm(){
+        padding: 80px 0;
+    }
+    @include md(){
+        padding: 100px 0;
+    }
+    .latestSlide{
+        margin: 20px 12px;
+        padding: 20px;
+        box-shadow: 0px 5px 10px 0px rgba(17, 22, 30, 0.08);
+        .image{
+            img{
+                width: 100%;
+                margin-bottom: 9px;
+            }
+        }
+        h4{
+            color: $textColor;
+            font-size: 20px;
+            font-weight: 600;
+            transition: .35s;
+            &:hover{
+                color: $babyPink;
+            }
+            @include xs(){
+                font-size: 18px;
+            }
+        }
+        p{
+            color: $grayColor;
+            font-family: $secFont;
+            margin: 5px 0px 10px 0;
+            @include xs(){
+                font-size: 14px;
+            }
+        }
+        .btn{
+            position: relative;
+            width: 100%;
+            text-align: left;
+            padding: 0;
+            @include xs(){
+                font-size: 14px;
+            }
+        }
+        a{
+            color: $grayColor;
+            transition: .35s;
+            &:hover{
+                color: $babyPink;
+            }
+        }
+        span{
+            position: absolute;
+            right: 0;
+        }
+    }
+    .slick-dots{
+        @extend %commonDots;
+        bottom: -40px;
+        li{
+            button{
+                background-color: #BDBDBD;
+            }
+            &.slick-active{
+                button{
+                    background-color: #151A32;
+                }
+            }
+        }
+    }
+}
+// *Latest News ends
