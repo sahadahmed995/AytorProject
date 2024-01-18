@@ -9,6 +9,26 @@ $(function(){
         $(this).siblings().removeClass("active")
         $(this).toggleClass("active")
     })
+
+    $(window).click(function(e){
+      if ($(e.target).hasClass("dd")) {
+        $(".dropDownCtn").toggleClass("active");
+      }else{
+        $(".dropDownCtn").removeClass("active");
+      }
+    })
+    $(window).scroll(function () { 
+      let scroll = $(window).scrollTop()
+      if (scroll > 699) {
+        $("nav").addClass("stiky")
+      }else{
+        $("nav").removeClass("stiky")
+      }
+      let scrollInPer = 100/$("html").height()*scroll + 100/$("html").height()*$(window).height()
+      $(".progress-bar").css({
+        width: `${scrollInPer}%`,
+      });
+    });
     // *nav ends
 
     // *banner slider starts
@@ -96,6 +116,13 @@ $(function(){
       autoplaySpeed:2500,
       speed:1000,
       responsive: [
+        {
+          breakpoint: 1200,
+          settings:{
+            slidesToShow: 3,
+            slidesToScroll:1,
+          },
+        },
         {
           breakpoint: 992,
           settings:{

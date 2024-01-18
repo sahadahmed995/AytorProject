@@ -1,0 +1,199 @@
+// *footer starts
+footer{
+    background-color: $textColor;
+    .footerHeading{
+        padding: 70px;
+        border-bottom: 1px solid $white;
+        @include xs(){
+            padding: 40px 0;
+        }
+        @include sm(){
+            padding: 50px 0;
+        }
+        .socalIcons{
+            span{
+                display: inline-block;
+                text-align: center;
+                line-height: 40px;
+                width: 40px;
+                height: 40px;
+                margin: 0px 5px;
+                background-color: $white;
+                color: $grayColor;
+                transition: .35s;
+                &:hover{
+                    background-color: $babyPink;
+                    color: $white;
+                }
+                @include xs(){
+                    width: 30px;
+                    height: 30px;
+                    line-height: 30px;
+                    font-size: 14px;
+                    margin: 0px 2.5px;
+                }
+            }
+            @include custom(){
+                text-align: center;
+            }
+        }
+        .footerLogo{
+            text-align: center;
+        }
+        .paymentCards{
+            text-align: right;
+            @include custom(){
+                text-align: center;
+            }
+        }
+    }
+    .footerBody{
+        padding: 70px 0;
+        @include xs(){
+            padding: 40px 0;
+        }
+        @include sm(){
+            padding: 50px 0;
+        }
+        .myAccount{
+            h4{
+                @extend %footerHedding;
+            }
+            ul{
+                li{
+                    a{
+                        color: $white;
+                        font-family: $secFont;
+                        font-size: 14px;
+                        transition: .35s;
+                    }
+                    &:hover a{
+                        color: $babyPink;
+                    }
+                }
+            }
+        }
+        .support{
+            @extend .myAccount;
+        }
+        .openingTime{
+            h4{
+                @extend %footerHedding;
+            }
+            ul{
+                font-size: 14px;
+                li{
+                    font-family: $secFont;
+                    color: $white;
+                    p{
+                        font-weight: 700;
+                        padding-right: 0;
+                    }
+                    span{
+                        padding: 0px 5px;
+                    }
+                }
+            }
+        }
+        .contactUs{
+            color: $white;
+            font-family: $secFont;
+            h4{
+                @extend %footerHedding;
+            }
+            address{
+                margin-bottom: 0;
+                line-height: 28px;
+                margin-bottom: 5px;
+                font-size: 14px;
+                span{
+                    color: $babyPink;
+                }
+            }
+            a{
+                display: block;
+                color: $white;
+                margin-bottom: 5px;
+                font-size: 14px;
+                span{
+                    color: $babyPink;
+                }
+            }
+        }
+        .newsLetter{
+            h4{
+                @extend %footerHedding;
+            }
+            p{
+                color: $white;
+                font-family: $secFont;
+                margin-bottom: 22px;
+                font-size: 14px;
+            }
+            form{
+                input{
+                    background-color: $white;
+                    border: none;
+                    outline: none;
+                    padding: 11px 10px;
+                    font-size: 14px;
+                    width:63%;
+                    &:focus::placeholder{
+                        color: transparent;
+                    }
+                }
+                button{
+                    border: none;
+                    background-color: $babyPink;
+                    color: $white;
+                    padding:11px 8px;
+                    font-size: 14px;
+                    width: 35%;
+                    margin-left: -5px;
+                }
+            }
+        }
+    }
+    .footerBottom{
+        background: rgba(255, 255, 255, 0.1);
+        text-align: center;
+        p{
+            font-family: $secFont;
+            padding: 21px 0;
+            color: $white;
+            span{
+                color: $babyPink;
+            }
+            @include xs(){
+                font-size: 14px;
+            }
+        }
+    }
+    .overly{
+        background-color: $white;
+        padding: 30px 30px;
+        transform: translateY(-50%);
+        box-shadow: 0px 0px 50px 0px rgba(21, 26, 50, 0.10);
+        .overlyBody{
+            border-right: 2px solid #f1f1f1;
+            &:last-child{
+                border: none;
+            }
+        }
+        .ctn{
+            h4{
+                color: $textColor;
+                font-size: 20px;
+                font-weight: 600;
+            }
+            p{
+                color: $grayColor;
+                font-family: $secFont;
+                span{
+                    color: $babyPink;
+                }
+            }
+        }
+    }
+}
+// *footer ends

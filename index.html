@@ -34,6 +34,9 @@
     <!-- *nav starts -->
 
     <nav class="navbar navbar-expand-lg navbar-light ">
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="./asset/images/aytor logo.png" alt="">
@@ -48,30 +51,34 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link " aria-current="page" href="#">Shop
-                    <span>
-                        <i class="fa-solid fa-chevron-down"></i>
-                    </span>
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link " aria-current="page" href="#">Pages
+              <li class="nav-item dropDown">
+                <a class="nav-link dd" aria-current="page" href="#">Pages
                     <span>
                         <i class="fa-solid fa-chevron-down"></i>
                     </span>
                 </a>
+                <div class="dropDownCtn">
+                  <ul>
+                    <li>
+                      <a href="about.html">About Us</a>
+                    </li>
+                    <li>
+                      <a href="#">Shop - Grid</a>
+                    </li>
+                    <li>
+                      <a href="#">Shop - Details</a>
+                    </li>
+                  </ul>
+                </div>
               </li>
               <li class="nav-item">
                 <a class="nav-link " aria-current="page" href="#">Features
-                    <span>
-                        <i class="fa-solid fa-chevron-down"></i>
-                    </span>
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link " aria-current="page" href="#">Blogs
-                    <span>
-                        <i class="fa-solid fa-chevron-down"></i>
-                    </span>
                 </a>
               </li>
               <li class="nav-item">
@@ -121,12 +128,25 @@
                           </span>
                       </a>
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link " aria-current="page" href="#">Pages
+                    <li class="nav-item dropDown">
+                      <a class="nav-link dd" aria-current="page" href="#">Pages
                           <span>
                               <i class="fa-solid fa-chevron-down"></i>
                           </span>
                       </a>
+                      <div class="dropDownCtn">
+                        <ul>
+                          <li>
+                            <a href="about.html">About Us</a>
+                          </li>
+                          <li>
+                            <a href="#">Shop - Grid</a>
+                          </li>
+                          <li>
+                            <a href="#">Shop - Details</a>
+                          </li>
+                        </ul>
+                      </div>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link " aria-current="page" href="#">Features
@@ -1026,7 +1046,7 @@
               </div>
               <div class="ctn">
                 <a href="#">
-                  <h4>Traveling Solo Is Awesome</h4>
+                  <h4>Traveling Solo Is <br class="d-none d-lg-block"> Awesome</h4>
                 </a>
                 <p>Appropriately seize 24/365 markets without adaptive.</p>
                 <div class="btn">
@@ -1126,6 +1146,154 @@
       </div>
     </section>
     <!-- *Latest News ends -->
+
+    <!-- *footer starts -->
+    <footer>
+      <div class="container">
+        <div class="overly w-100 d-none d-lg-block">
+          <div class="row gy-3 align-items-center">
+            <div class="col-lg-3 overlyBody">
+              <div class="row align-items-center">
+                <div class="image col-3">
+                  <img class="w-100" src="./asset/images/footer_overly_img1.png" alt="">
+                </div>
+                <div class="ctn col-9">
+                  <h4>FREE SHIPING</h4>
+                  <p>all orders over <span>$150</span></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 overlyBody">
+              <div class="row align-items-center">
+                <div class="image col-3">
+                  <img class="w-100" src="./asset/images/footer_overly_img2.png" alt="">
+                </div>
+                <div class="ctn col-9">
+                  <h4>QUICK PAYMENT</h4>
+                  <p>100% secure payment</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 overlyBody">
+              <div class="row align-items-center">
+                <div class="image col-3">
+                  <img class="w-100" src="./asset/images/footer_overly_img3.png" alt="">
+                </div>
+                <div class="ctn col-9">
+                  <h4>FREE RETURNS</h4>
+                  <p>Return money within 30 days</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 overlyBody" >
+              <div class="row align-items-center">
+                <div class="image col-3">
+                  <img class="w-100" src="./asset/images/footer_overly_img4.png" alt="">
+                </div>
+                <div class="ctn col-9">
+                  <h4>24/7 SUPPORT</h4>
+                  <p>Quick Support</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row footerHeading gy-3 gy-lg-0">
+          <div class="col-lg-4 col-12 order-lg-1 order-2 socalIcons">
+            <a href="#"><span><i class="fa-brands fa-facebook-f"></i></span></a>
+            <a href="#"><span><i class="fa-brands fa-x-twitter"></i></span></a>
+            <a href="#"><span><i class="fa-brands fa-instagram"></i></span></a>
+            <a href="#"><span><i class="fa-brands fa-pinterest-p"></i></span></a>
+          </div>
+          <div class="col-lg-4 col-12 order-lg-2 order-1 footerLogo ">
+            <a href="#"><img src="./asset/images/aytor_logo_footer.png" alt=""></a>
+          </div>
+          <div class="col-lg-4 col-12 d-lg-block order-3 d-none paymentCards">
+            <a href="#">
+              <img src="./asset/images/paymentCardIcons.png" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="footerBody row gy-4 gy-sm-5 gy-lg-0">
+          <div class="col-lg-2 col-12 col-sm-4 myAccount">
+            <h4>My Account</h4>
+            <ul>
+              <li><a href="#"><span><i class="fa-solid fa-chevron-right"></i></span> My Account</a></li>
+              <li><a href="#"><span><i class="fa-solid fa-chevron-right"></i></span> View Cart</a></li>
+              <li><a href="#"><span><i class="fa-solid fa-chevron-right"></i></span> Wishlist</a></li>
+              <li><a href="#"><span><i class="fa-solid fa-chevron-right"></i></span> Compare</a></li>
+              <li><a href="#"><span><i class="fa-solid fa-chevron-right"></i></span> New Products</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-12 col-sm-4 support">
+            <h4>Support</h4>
+            <ul>
+              <li><a href="#"><span><i class="fa-solid fa-chevron-right"></i></span> Help</a></li>
+              <li><a href="#"><span><i class="fa-solid fa-chevron-right"></i></span> Contact Us</a></li>
+              <li><a href="#"><span><i class="fa-solid fa-chevron-right"></i></span> Feedback</a></li>
+              <li><a href="#"><span><i class="fa-solid fa-chevron-right"></i></span> Customer Service</a></li>
+              <li><a href="#"><span><i class="fa-solid fa-chevron-right"></i></span> Store Locations</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-12 col-sm-4 openingTime p-lg-0 ">
+            <h4>Opening Time</h4>
+            <ul>
+              <li>
+                <div class="row">
+                  <p class="col-sm-5 col-3">Mon-Tue:</p>
+                  <span class="col-sm-7 col-3">8AM-10PM</span>
+                </div>
+              </li>
+              <li>
+                <div class="row">
+                  <p class="col-sm-5 col-3">Wed:</p>
+                  <span class="col-sm-7 col-3">8AM-7PM</span>
+                </div>
+              </li>
+              <li>
+                <div class="row">
+                  <p class="col-sm-5 col-3">Fri:</p>
+                  <span class="col-sm-7 col-3 ">7AM-12PM</span>
+                </div>
+              </li>
+              <li>
+                <div class="row">
+                  <p class="col-sm-5 col-3">Sat:</p>
+                  <span class="col-sm-7 col-3 ">9AM-8PM</span>
+                </div>
+              </li>
+              <li>
+                <div class="row">
+                  <p class="col-sm-5 col-3">Sun:</p>
+                  <span class="col-sm-7 col-3">Closed</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-12 col-sm-6 contactUs">
+            <h4>Contact Us</h4>
+            <address><span><i class="fa-solid fa-location-dot"></i></span> 830 Broad way, New York, NY 10003, United States</address>
+            <a href="tel:+18008660286"><span><i class="fa-solid fa-phone"></i></span> +18008660286</a>
+            <a href="mailto:aetor.info@gmail.com"><span><i class="fa-solid fa-envelope"></i></span> aetor.info@gmail.com</a>
+            <a href="mailto:info@aetor.com">info@aetor.com</a>
+          </div>
+          <div class="col-lg-3 col-12 col-sm-6 newsLetter">
+            <h4 >News Letter</h4>
+            <p>Authoritatively morph 24/7 potentialities with error-free partnerships.</p>
+            <form action="#" method="get">
+              <div class="">
+                <input class="" type="text" placeholder="Enter your email....">
+                <button class="">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="footerBottom">
+        <p>© 2022 All Rights Reserved <span>Aytor</span> By <span>Angfuzsoft</span>.</p>
+      </div>
+    </footer>
+    <!-- *footer ends -->
     
     <!-- *jquary js -->
     <script src="./asset/vendor/js/jquery-3.7.1.min.js"></script>

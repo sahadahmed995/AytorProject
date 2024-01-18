@@ -87,6 +87,47 @@ a {
   }
 }
 
+footer .footerBody .newsLetter h4, footer .footerBody .contactUs h4, footer .footerBody .openingTime h4, footer .footerBody .myAccount h4, footer .footerBody .support h4 {
+  font-size: 22px;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 22px;
+}
+@media (320px <= width <= 575px) {
+  footer .footerBody .newsLetter h4, footer .footerBody .contactUs h4, footer .footerBody .openingTime h4, footer .footerBody .myAccount h4, footer .footerBody .support h4 {
+    margin-bottom: 15px;
+  }
+}
+
+nav {
+  background-color: #fff;
+  width: 100%;
+}
+nav .progress {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  height: 3px;
+}
+nav .progress .progress-bar {
+  background-color: #FF6F61;
+}
+nav.stiky {
+  top: 0;
+  position: fixed !important;
+  z-index: 99;
+  animation: slideDown 0.55s ease alternate;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 nav .navbar-nav li {
   padding: 0 15px;
 }
@@ -115,6 +156,47 @@ nav .navbar-nav li:first-child {
 }
 nav .navbar-nav li:last-child {
   padding-right: 0;
+}
+nav .navbar-nav .dropDown {
+  position: relative;
+}
+nav .navbar-nav .dropDown ul li {
+  padding: 0;
+  margin-bottom: 10px;
+}
+nav .navbar-nav .dropDown ul li:last-child {
+  margin-bottom: 0;
+}
+nav .navbar-nav .dropDown:hover ul li a {
+  color: #11161E !important;
+  transition: 0.35s;
+}
+nav .navbar-nav .dropDown:hover ul li:hover a {
+  color: #FF6F61 !important;
+}
+nav .navbar-nav .dropDown:hover .dropDownCtn {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+nav .navbar-nav .dropDownCtn {
+  background-color: #fff;
+  position: absolute;
+  left: -10px;
+  top: 25px;
+  z-index: 999;
+  width: 150px;
+  padding: 50px 20px 20px 20px;
+  border-radius: 0px 0px 10px 10px;
+  transform: translateY(-100%);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.55s;
+}
+nav .navbar-nav .dropDownCtn.active {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
 }
 nav .left-icons li {
   display: inline-block;
@@ -167,6 +249,29 @@ aside .offcanvas-body ul li.active a {
 aside .offcanvas-body ul li.active a span svg {
   transform: rotateZ(180deg);
   transition: 0.35s;
+}
+aside .offcanvas-body ul .dropDown ul li {
+  margin-bottom: 10px;
+}
+aside .offcanvas-body ul .dropDown ul li:last-child {
+  margin-bottom: 0;
+}
+aside .offcanvas-body ul .dropDownCtn {
+  padding-left: 20px;
+  height: 0px;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: 0.55s;
+}
+aside .offcanvas-body ul .dropDownCtn ul li a {
+  color: #11161E !important;
+}
+aside .offcanvas-body ul .dropDownCtn ul li:last-child {
+  border-bottom: none;
+}
+aside .offcanvas-body ul .dropDownCtn.active {
+  height: 150px;
+  transform: scaleY(1);
 }
 
 #banner .bannerSlide {
@@ -901,6 +1006,12 @@ aside .offcanvas-body ul li.active a span svg {
     padding: 25px 30px;
   }
 }
+@media (992px <= width <= 1199px) {
+  #dealOfTheDay .dealBody .dealCtn {
+    margin: 0px 25px;
+    padding: 35px 60px 80px 40px;
+  }
+}
 #dealOfTheDay .dealBody .dealCtn h4 {
   font-size: 18px;
   font-weight: 600;
@@ -918,6 +1029,11 @@ aside .offcanvas-body ul li.active a span svg {
 @media (320px <= width <= 575px) {
   #dealOfTheDay .dealBody .dealCtn h2 {
     font-size: 26px;
+  }
+}
+@media (992px <= width <= 1199px) {
+  #dealOfTheDay .dealBody .dealCtn h2 {
+    font-size: 32px;
   }
 }
 #dealOfTheDay .dealBody .dealCtn p {
@@ -1168,4 +1284,190 @@ aside .offcanvas-body ul li.active a span svg {
 }
 #latestNews .slick-dots li.slick-active button {
   background-color: #151A32;
+}
+
+footer {
+  background-color: #11161E;
+}
+footer .footerHeading {
+  padding: 70px;
+  border-bottom: 1px solid #fff;
+}
+@media (320px <= width <= 575px) {
+  footer .footerHeading {
+    padding: 40px 0;
+  }
+}
+@media (576px <= width <= 767px) {
+  footer .footerHeading {
+    padding: 50px 0;
+  }
+}
+footer .footerHeading .socalIcons span {
+  display: inline-block;
+  text-align: center;
+  line-height: 40px;
+  width: 40px;
+  height: 40px;
+  margin: 0px 5px;
+  background-color: #fff;
+  color: #444;
+  transition: 0.35s;
+}
+footer .footerHeading .socalIcons span:hover {
+  background-color: #FF6F61;
+  color: #fff;
+}
+@media (320px <= width <= 575px) {
+  footer .footerHeading .socalIcons span {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    margin: 0px 2.5px;
+  }
+}
+@media (320px <= width <= 991px) {
+  footer .footerHeading .socalIcons {
+    text-align: center;
+  }
+}
+footer .footerHeading .footerLogo {
+  text-align: center;
+}
+footer .footerHeading .paymentCards {
+  text-align: right;
+}
+@media (320px <= width <= 991px) {
+  footer .footerHeading .paymentCards {
+    text-align: center;
+  }
+}
+footer .footerBody {
+  padding: 70px 0;
+}
+@media (320px <= width <= 575px) {
+  footer .footerBody {
+    padding: 40px 0;
+  }
+}
+@media (576px <= width <= 767px) {
+  footer .footerBody {
+    padding: 50px 0;
+  }
+}
+footer .footerBody .myAccount ul li a, footer .footerBody .support ul li a {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  transition: 0.35s;
+}
+footer .footerBody .myAccount ul li:hover a, footer .footerBody .support ul li:hover a {
+  color: #FF6F61;
+}
+footer .footerBody .openingTime ul {
+  font-size: 14px;
+}
+footer .footerBody .openingTime ul li {
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+footer .footerBody .openingTime ul li p {
+  font-weight: 700;
+  padding-right: 0;
+}
+footer .footerBody .openingTime ul li span {
+  padding: 0px 5px;
+}
+footer .footerBody .contactUs {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+footer .footerBody .contactUs address {
+  margin-bottom: 0;
+  line-height: 28px;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+footer .footerBody .contactUs address span {
+  color: #FF6F61;
+}
+footer .footerBody .contactUs a {
+  display: block;
+  color: #fff;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+footer .footerBody .contactUs a span {
+  color: #FF6F61;
+}
+footer .footerBody .newsLetter p {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 22px;
+  font-size: 14px;
+}
+footer .footerBody .newsLetter form input {
+  background-color: #fff;
+  border: none;
+  outline: none;
+  padding: 11px 10px;
+  font-size: 14px;
+  width: 63%;
+}
+footer .footerBody .newsLetter form input:focus::-moz-placeholder {
+  color: transparent;
+}
+footer .footerBody .newsLetter form input:focus::placeholder {
+  color: transparent;
+}
+footer .footerBody .newsLetter form button {
+  border: none;
+  background-color: #FF6F61;
+  color: #fff;
+  padding: 11px 8px;
+  font-size: 14px;
+  width: 35%;
+  margin-left: -5px;
+}
+footer .footerBottom {
+  background: rgba(255, 255, 255, 0.1);
+  text-align: center;
+}
+footer .footerBottom p {
+  font-family: "Roboto", sans-serif;
+  padding: 21px 0;
+  color: #fff;
+}
+footer .footerBottom p span {
+  color: #FF6F61;
+}
+@media (320px <= width <= 575px) {
+  footer .footerBottom p {
+    font-size: 14px;
+  }
+}
+footer .overly {
+  background-color: #fff;
+  padding: 30px 30px;
+  transform: translateY(-50%);
+  box-shadow: 0px 0px 50px 0px rgba(21, 26, 50, 0.1);
+}
+footer .overly .overlyBody {
+  border-right: 2px solid #f1f1f1;
+}
+footer .overly .overlyBody:last-child {
+  border: none;
+}
+footer .overly .ctn h4 {
+  color: #11161E;
+  font-size: 20px;
+  font-weight: 600;
+}
+footer .overly .ctn p {
+  color: #444;
+  font-family: "Roboto", sans-serif;
+}
+footer .overly .ctn p span {
+  color: #FF6F61;
 }

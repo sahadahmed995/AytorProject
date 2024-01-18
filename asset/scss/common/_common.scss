@@ -135,4 +135,13 @@ a{
         }
     }
 }
+%footerHedding{
+    font-size: 22px;
+    color: $white;
+    font-weight: 700;
+    margin-bottom: 22px;
+    @include xs(){
+        margin-bottom: 15px;
+    }
+}
 // *common hedding ends
