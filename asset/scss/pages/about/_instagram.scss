@@ -1,0 +1,53 @@
+// *sytor instagram starts
+#instagram{
+    padding-bottom: 150px;
+    @include xs(){
+        padding-bottom: 100px;
+    }
+    .instaSlide{
+        position: relative;
+        margin: 0px 12px;
+        overflow: hidden;
+        img{
+            transition: .35s;
+            width: 100%;
+        }
+        span{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            font-size: 1px;
+            color: $babyPink;
+            opacity: 0;
+            transition: .35s;
+        }
+        &:hover{
+            img{
+                filter: brightness(70%);
+            }
+            span{
+                opacity: 1;
+                font-size: 40px;
+                top: 50%;
+                left: 50%;
+            }
+        }
+    }
+    .slick-dots{
+        @extend %commonDots;
+        bottom: -80px;
+        @include xs(){
+            bottom: -50px;
+        }
+        @include sm(){
+            bottom: -70px;
+        }
+        li{
+            button{
+                background-color: #BDBDBD;
+            }
+        }
+    }
+}
+// *sytor instagram ends

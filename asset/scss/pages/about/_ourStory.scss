@@ -1,0 +1,117 @@
+// *Our Story starts
+#ourStory{
+    background-color: #F1F3F4;
+    padding: 100px 0;
+    position: relative;
+    @include custom(){
+        padding-top: 0;
+    }
+    @include xs(){
+        padding-bottom: 50px;
+    }
+    @include sm(){
+        padding-bottom: 70px;
+    }
+    @include lg (){
+        padding: 50px 0;
+    }
+    .left{
+        padding-right: 20px;
+        @include xs(){
+            margin-top: 30px;
+        }
+        @include sm(){
+            margin-top: 50px;
+        }
+        @include md(){
+            margin-top: 70px;
+        }
+        h2{
+            color: $textColor;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 700;
+            @include xs(){
+                font-size: 28px;
+            }
+        }
+        p{
+            color: $grayColor;
+            margin: 10px 0;
+            font-family: $secFont;
+            line-height: 28px;
+            @include xs(){
+                font-size: 14px;
+                line-height: 24px;
+            }
+        }
+    }
+    .right{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        @include custom(){
+            position: static;
+            padding: 0;
+        }
+        .image{
+            position: relative;
+            span{
+                position: absolute;
+                z-index: 9;
+                width: 60px;
+                height: 60px;
+                display: block;
+                right: 50%;
+                top: 50%;
+                transform: translate(50%,-50%);
+                background-color: $white;
+                border-radius: 50%;
+                text-align: center;
+                line-height: 60px;
+                color: $babyPink;
+                font-size: 18px;
+                &::before,
+                &::after{
+                    content: "";
+                    width: 100px;
+                    height: 100px;
+                    background-color: $white;
+                    opacity: .4;
+                    position: absolute;
+                    border-radius: 50%;
+                    z-index: -1;
+                    top: -20px;
+                    left: -20px;
+                    animation: playBtn 2s linear;
+                    animation-iteration-count: infinite;
+                }
+                &::after{
+                    animation-delay: .5s;
+                }
+                &:hover::before,
+                &:hover::after{
+                    animation: none;
+                }
+                @keyframes playBtn {
+                    0%{
+                        transform: scale(0);
+                        opacity: 2;
+                    }
+                    100%{
+                        transform: scale(1);
+                        opacity: 0;
+                    }
+                }
+            }
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            opacity: .8;
+        }
+    }
+
+}
+// *Our Story ends

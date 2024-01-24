@@ -1,0 +1,83 @@
+// *coustomer review starts
+#coustomer{
+    position: relative;
+    padding-bottom: 100px;
+    @include xs(){
+        padding-bottom: 0px;
+    }
+    @include sm(){
+        padding-bottom: 0px;
+    }
+    .headding{
+        text-align: center;
+    }
+    .background{
+        background-image: url(../images/customer_review_backgroung.png);
+        background-size:cover;
+        background-repeat: no-repeat;
+        padding-bottom: 100px;
+        @include custom(){
+            background-image: none;
+        }
+    }
+    .coustomerSlider{
+        width: 60%;
+        margin: auto;
+        @include custom(){
+            width: 100%;
+        }
+    }
+    .coustomerSlide{
+        text-align: center;
+        opacity: 0;
+        transform: translateY(50%);
+        transition: 1s ease-out;
+        img{
+            margin: 25px auto;
+            width: 100px;
+        }
+        p{
+            color: $grayColor;
+            font-family: $secFont;
+            @include xs(){
+                font-size: 14px;
+            }
+        }
+        h4{
+            margin-top: 10px;
+            color: $textColor;
+            font-size: 24px;
+            font-weight: 700;
+            @include xs(){
+                font-size: 22px;
+            }
+        }
+        span{
+            color: $babyPink;
+            font-family: $secFont;
+            @include xs(){
+                font-size: 14px;
+            }
+        }
+        &.slick-center{
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    .slick-dots{
+        @extend %commonDots;
+        bottom: -80px;
+        @include xs(){
+            bottom: -50px;
+        }
+        @include sm(){
+            bottom: -70px;
+        }
+        li{
+            button{
+                background-color: #BDBDBD;
+            }
+        }
+    }
+}
+// *coustomer review ends

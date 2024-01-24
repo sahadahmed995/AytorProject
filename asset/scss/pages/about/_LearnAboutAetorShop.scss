@@ -1,0 +1,148 @@
+#LearnAetor{
+    padding: 100px 0;
+    @include xs(){
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+    @include sm(){
+        padding-top: 70px;
+        padding-bottom: 50px;
+    }
+    .body{
+        background-image: url(../images/learn_about_aytor_background.png);
+        background-size: cover;
+        background-position: center;
+        margin-left: auto;
+        @include custom(){
+            background-image: none;
+        }
+        img{
+            width: 100%;
+            margin-left: -100px;
+            @include custom(){
+                margin-left: 0;
+            }
+            @include lg(){
+                margin-left: -50px;
+            }
+        }
+        .top{
+            padding:  70px 50px 0 0px;
+            @include xs(){
+                padding: 30px 0 0 0 ;
+            }
+            @include lg(){
+                padding: 20px 10px 0px 0;
+            }
+            h2{
+                color: $textColor;
+                font-size: 36px;
+                font-weight: 700;
+                margin-bottom: 10px;
+                @include xs(){
+                    font-size: 28px;
+                    margin-bottom: 5px;
+                }
+            }
+            p{
+                border-bottom: 1px solid $grayColor;
+                color: $grayColor;
+                font-family: $secFont;
+                padding-bottom: 28px;
+                @include xs(){
+                    font-size: 14px;
+                    padding-bottom: 18px;
+                }
+                @include sm(){
+                    padding-bottom: 25px;
+                }
+            }
+        }
+        .bottom{
+            padding:  30px 50px 50px 0px;
+            @include xs(){
+                padding: 18px 0px 20px 0;
+            }
+            @include sm(){
+                padding: 25px 0px 0px 0;
+            }
+            @include md(){
+                padding: 40px 0px 0px 0;
+            }
+            @include lg(){
+                padding: 20px 0px 30px 0;
+            }
+            ul{
+                margin-bottom: 35px;
+                @include xs(){
+                    margin-bottom: 20px;
+                }
+                li{
+                    color: $grayColor;
+                    font-family: $secFont;
+                    margin-bottom: 10px;
+                    @include xs(){
+                        font-size: 14px;
+                    }
+                    span{
+                        color: $babyPink;
+                    }
+                }
+            }
+            a{
+                @include btn(common){
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+#aboutInfo{
+    padding-bottom: 100px;
+    @include xs(){
+        padding-bottom: 50px;
+    }
+    @include sm(){
+        padding-bottom: 70px;
+    }
+    .aboutInfoCards{
+        text-align: center;
+        span{
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+            font-size: 50px;
+            color: $naviColor;
+            background-color: #F1F3F4;
+            border-radius: 50%;
+            display: inline-block;
+            transition: .35s ease;
+            &:hover{
+                color: $babyPink;
+            }
+            @include xs(){
+                width: 80px;
+                height: 80px;
+                font-size: 32px;
+                line-height: 80px;
+            }
+        }
+        h4{
+            color: $babyPink;
+            font-size: 36px;
+            font-weight: 700;
+            margin-top: 20px;
+            @include xs(){
+                font-size: 28px;
+            }
+        }
+        p{
+            color: $grayColor;
+            font-family: $secFont;
+            @include xs(){
+                font-size: 14px;
+            }
+        }
+    }
+}

@@ -1,0 +1,57 @@
+// *about overly starts
+#aboutOerly{
+    padding: 100px 0;
+    @include xs(){
+        padding: 50px 0;
+    }
+    @include sm(){
+        padding: 70px 0;
+    }
+    .overlyCtn{
+        @extend .overly;
+        .overlyBody{
+            border-right: 2px solid #F1F1F1;
+            @include sm(){
+                border: none;
+            }
+            @include md(){
+                border: none;
+            }
+            @include lg(){
+                border: none;
+            }
+            .image{
+                text-align: right;
+                img{
+                    @include xs(){
+                        width: 75% !important;
+                    }
+                    @include sm(){
+                        width: 100% !important;
+                    }
+                    @include md(){
+                        width: 75% !important;
+                    }
+                }
+            }
+        }
+        .ctn{
+            h4{
+                color: $textColor;
+                font-size: 20px;
+                font-weight: 600;
+                @include xs(){
+                    font-size: 18px;
+                }
+            }
+            p{
+                color: $grayColor;
+                font-family: $secFont;
+                @include xs(){
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+// *about overly ends

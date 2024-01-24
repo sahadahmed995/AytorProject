@@ -117,7 +117,7 @@ $(function(){
       speed:1000,
       responsive: [
         {
-          breakpoint: 1200,
+          breakpoint: 1199,
           settings:{
             slidesToShow: 3,
             slidesToScroll:1,
@@ -148,4 +148,89 @@ $(function(){
       ]
     })
     // *latest news ends
+
+    // *about aytor video starts
+    new VenoBox({
+      selector: '.aboutAytorVideo',
+    });
+    // *about aytor video ends
+
+    // *team starts
+    $(".teamSlider").slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      arrows: true,
+      speed:500,
+      prevArrow: ".leftArrow",
+      nextArrow: ".rightArrow",
+      responsive: [
+        {
+          breakpoint: 1199,
+          settings:{
+            slidesToShow: 3,
+            slidesToScroll:1,
+          },
+        },
+        {
+          breakpoint: 991,
+          settings:{
+            slidesToShow: 2,
+            slidesToScroll:1,
+          },
+        },
+        {
+          breakpoint: 575,
+          settings:{
+            slidesToShow: 1,
+            slidesToScroll:1,
+          },
+        },
+      ]
+    })
+    // *team ends
+
+    // *coustomer riview starts
+    $(".coustomerSlider").slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      dots:true,
+      speed:500,
+      centerMode: true,
+      centerPadding: '0px',
+    })
+    // *coustomer riview ends
+
+    // *aytor insta starts
+    $(".instaSlider").slick({
+      slidesToShow: 6,
+      slidesToScroll: 2,
+      arrows: false,
+      dots:true,
+      speed:500,
+      responsive: [
+        {
+          breakpoint: 1199,
+          settings:{
+            slidesToShow: 4,
+            slidesToScroll:1,
+          },
+        },
+        {
+          breakpoint: 991,
+          settings:{
+            slidesToShow: 3,
+            slidesToScroll:2,
+          },
+        },
+        {
+          breakpoint: 575,
+          settings:{
+            slidesToShow: 2,
+            slidesToScroll:2,
+          },
+        },
+      ]
+    })
+    // *aytor insta ends
 })
