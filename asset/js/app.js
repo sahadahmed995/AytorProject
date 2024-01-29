@@ -33,10 +33,11 @@ $(function(){
 
     // *banner slider starts
     $(".bannerSlider").slick({
+        infinite: true,
         arrows: false,
         dots: true,
         dotsClass: "container slick-dots",
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 3000,
         speed:1000,
         pauseOnHover:false,
@@ -234,3 +235,10 @@ $(function(){
     })
     // *aytor insta ends
 })
+
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+})
+
+

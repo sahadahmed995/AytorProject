@@ -374,22 +374,12 @@ aside .offcanvas-body ul .dropDownCtn.active {
 }
 #banner .bannerSlide .bannerCtn {
   opacity: 0;
-  transform: translateY(-100%);
+  transform: translateX(100%);
 }
 #banner .bannerSlide.slick-active .bannerCtn {
   opacity: 1;
-  transform: translateY(0);
-  animation: bannerAnimation 2s;
-}
-@keyframes bannerAnimation {
-  0% {
-    opacity: 0;
-    transform: translateY(-100%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0%);
-  }
+  transform: translateX(0);
+  transition: 1s ease;
 }
 @media (320px <= width <= 575px) {
   #banner .bannerSlide.slide1 {
