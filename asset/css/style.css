@@ -1980,6 +1980,249 @@ aside .offcanvas-body ul .dropDownCtn.active {
   background-color: #BDBDBD;
 }
 
+#shop {
+  padding: 100px 0;
+}
+@media (320px <= width <= 575px) {
+  #shop {
+    padding: 50px 0;
+  }
+}
+@media (576px <= width <= 767px) {
+  #shop {
+    padding: 70px 0;
+  }
+}
+#shop .top {
+  margin-bottom: 30px;
+}
+#shop .top .filterIcons ul {
+  display: block;
+  border: none;
+}
+#shop .top .filterIcons ul li {
+  display: inline-block;
+  width: 50%;
+  margin: 0;
+  float: right;
+}
+#shop .top .filterIcons ul li button {
+  width: 100%;
+  background-color: #11161E;
+  padding: 5px;
+  border: none;
+  outline: none;
+  border-radius: 0;
+  margin-bottom: 0;
+}
+#shop .top .filterIcons ul li button span {
+  font-size: 24px;
+  color: #fff;
+}
+#shop .top .filterIcons ul li button.active {
+  background-color: #FF6F61;
+}
+#shop .top .ShowingProduct p {
+  color: #444;
+  margin-bottom: 10px;
+}
+#shop .top .ShowingProduct .progress {
+  height: 2px;
+}
+#shop .top .selector {
+  text-align: right;
+}
+#shop .top .selector select {
+  width: 312px;
+  padding: 12px 0px 12px 16px;
+  background-color: #F1F3F4;
+  border: none;
+  color: #444;
+  font-family: "Roboto", sans-serif;
+}
+#shop .top .selector select:focus {
+  border: none;
+  outline: none;
+}
+@media (320px <= width <= 575px) {
+  #shop .top .selector select {
+    width: 100%;
+  }
+}
+@media (576px <= width <= 767px) {
+  #shop .top .selector select {
+    width: 100%;
+  }
+}
+#shop .body .productCard .image {
+  overflow: hidden;
+  position: relative;
+}
+#shop .body .productCard .image .tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #FF6F61;
+  color: #fff;
+  padding: 0 20px;
+}
+#shop .body .productCard .image .tag p {
+  font-weight: 700;
+}
+#shop .body .productCard .image img {
+  width: 100%;
+}
+#shop .body .productCard .image .overly, #shop .body .productCard .image #aboutOerly .overlyCtn, #aboutOerly #shop .body .productCard .image .overlyCtn {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+#shop .body .productCard .image .overly span, #shop .body .productCard .image #aboutOerly .overlyCtn span, #aboutOerly #shop .body .productCard .image .overlyCtn span {
+  width: 36px;
+  height: 36px;
+  display: block;
+  background-color: #fff;
+  color: #151A32;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 36px;
+  transform: translateX(-150%);
+  opacity: 0;
+}
+#shop .body .productCard .image .overly span:hover, #shop .body .productCard .image #aboutOerly .overlyCtn span:hover, #aboutOerly #shop .body .productCard .image .overlyCtn span:hover {
+  background-color: #FF6F61;
+  color: #fff;
+}
+#shop .body .productCard .image:hover img {
+  transform: scale(110%);
+  transition: 0.35s ease;
+}
+#shop .body .productCard .image:hover .overly span, #shop .body .productCard .image:hover #aboutOerly .overlyCtn span, #aboutOerly #shop .body .productCard .image:hover .overlyCtn span {
+  transform: translateX(0);
+  opacity: 1;
+}
+#shop .body .productCard .ctn {
+  padding: 20px 0;
+}
+#shop .body .productCard .ctn h4 {
+  display: inline-block;
+  color: #11161E;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+#shop .body .productCard .ctn p {
+  display: inline-block;
+  text-align: center;
+  font-size: 10px;
+  color: #FF6F61;
+}
+#shop .body .productCard .ctn p span {
+  color: #11161E;
+  font-size: 12px;
+}
+#shop .body .productCard .ctn h6 {
+  font-size: 16px;
+  color: #444;
+}
+#shop .body .productCard .ctn .mobileShopIcons {
+  border: 1px solid #FF6F61;
+  margin: 10px 0;
+}
+#shop .body .productCard .ctn .mobileShopIcons a span {
+  display: inline-block;
+  color: #FF6F61;
+  width: 100%;
+  text-align: left;
+  padding: 5px 0;
+  font-size: 18px;
+  text-align: center;
+}
+#shop .body .productCard .ctn .mobileShopIcons a:first-child {
+  padding-right: 0;
+}
+#shop .body .productCard .ctn .mobileShopIcons a:first-child span {
+  color: #fff;
+  background-color: #FF6F61;
+}
+#shop .body .productCard .ctn .mobileShopIcons a:last-child {
+  padding-left: 0;
+}
+#shop .body .shopProductCardList {
+  padding: 20px;
+  margin-bottom: 50px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#shop .body .shopProductCardList .ctn {
+  position: relative;
+  padding-left: 20px;
+}
+#shop .body .shopProductCardList .ctn h4 {
+  color: #11161E;
+  font-size: 28px;
+  font-weight: 800;
+  margin: 20px 0;
+}
+@media (768px <= width <= 991px) {
+  #shop .body .shopProductCardList .ctn h4 {
+    margin: 10px 0;
+  }
+}
+@media (992px <= width <= 1199px) {
+  #shop .body .shopProductCardList .ctn h4 {
+    margin: 10px 0;
+  }
+}
+#shop .body .shopProductCardList .ctn h6 {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 20px;
+}
+@media (768px <= width <= 991px) {
+  #shop .body .shopProductCardList .ctn h6 {
+    margin-bottom: 10px;
+  }
+}
+@media (992px <= width <= 1199px) {
+  #shop .body .shopProductCardList .ctn h6 {
+    margin-bottom: 10px;
+  }
+}
+#shop .body .shopProductCardList .ctn span {
+  color: #FF6F61;
+  font-size: 14px;
+}
+#shop .body .shopProductCardList .ctn p {
+  font-family: "Roboto", sans-serif;
+  color: #11161E;
+  margin: 20px 0;
+}
+@media (992px <= width <= 1199px) {
+  #shop .body .shopProductCardList .ctn p {
+    margin: 0px 0;
+  }
+}
+#shop .body .shopProductCardList .ctn .shopIcons {
+  position: absolute;
+  bottom: 0;
+}
+#shop .body .shopProductCardList .ctn .shopIcons span {
+  width: 36px;
+  height: 36px;
+  display: inline-block;
+  background-color: #11161E;
+  color: #fff;
+  margin-bottom: 10px;
+  text-align: center;
+  line-height: 36px;
+  transition: 0.25s ease;
+}
+#shop .body .shopProductCardList .ctn .shopIcons span:hover {
+  background-color: #FF6F61;
+}
+
 footer {
   background-color: #11161E;
 }

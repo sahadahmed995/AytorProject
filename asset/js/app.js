@@ -25,7 +25,7 @@ $(function(){
         $("nav").removeClass("stiky")
       }
       let scrollInPer = 100/$("html").height()*scroll + 100/$("html").height()*$(window).height()
-      $(".progress-bar").css({
+      $(".nav-progress-bar").css({
         width: `${scrollInPer}%`,
       });
     });

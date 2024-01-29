@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- *google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- *fontawsome css -->
+    <link rel="stylesheet" href="./asset/vendor/css/all.min.css">
+
+    <!-- *slick-slider css -->
+    <link rel="stylesheet" href="./asset/vendor/css/slick.css">
+
+    <!-- *aos css -->
+    <link rel="stylesheet" href="./asset/vendor/css/aos.css">
+
+    <!-- *venobox css -->
+    <link rel="stylesheet" href="./asset/vendor/css/venobox.min.css">
+
+    <!-- *bootstrap css -->
+    <link rel="stylesheet" href="./asset/vendor/css/bootstrap.min.css">
+
+    <!-- bootstrap map -->
+    <link rel="stylesheet" href="./asset/vendor/css/bootstrap.min.css.map">
+
+    <!-- *my css -->
+    <link rel="stylesheet" href="./asset/css/style.min.css">
+</head>
+<body>
+    <!-- *nav starts -->
+
+    <nav class="navbar navbar-expand-lg navbar-light ">
+      <div class="progress">
+        <div class="progress-bar nav-progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./asset/images/aytor logo.png" alt="">
+            </a>
+          <button class="navbar-toggler order-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="#">Shop
+                </a>
+              </li>
+              <li class="nav-item dropDown currentPage">
+                <a class="nav-link dd" aria-current="page" href="#">Pages
+                    <span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </span>
+                </a>
+                <div class="dropDownCtn">
+                  <ul>
+                    <li>
+                      <a href="about.html">About Us</a>
+                    </li>
+                    <li>
+                      <a href="#">Shop - Grid</a>
+                    </li>
+                    <li>
+                      <a href="#">Shop - Details</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="#">Features
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="#">Blogs
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="#">Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+          <ul class="ms-auto left-icons">
+            <li class="d-none d-lg-inline-block">
+                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </li>
+            <li class="d-none d-lg-inline-block"> 
+                <a href="#"><i class="fa-regular fa-user"></i></a>
+            </li>
+            <li class="d-none d-lg-inline-block">
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa-solid fa-bag-shopping"></i>
+                    <span>0</span>
+                </a>
+            </li>
+        </ul>
+        </div>
+    </nav>
+
+    <!-- *sideBar starts -->
+    <aside> 
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <a href="#" class="offcanvas-title" id="offcanvasExampleLabel">
+                <img src="./asset/images/aytor logo.png" alt="">
+            </a>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="sideBarMenu">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link " aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link " aria-current="page" href="#">Shop
+                          <span>
+                              <i class="fa-solid fa-chevron-down"></i>
+                          </span>
+                      </a>
+                    </li>
+                    <li class="nav-item dropDown">
+                      <a class="nav-link dd" aria-current="page" href="#">Pages
+                          <span>
+                              <i class="fa-solid fa-chevron-down"></i>
+                          </span>
+                      </a>
+                      <div class="dropDownCtn">
+                        <ul>
+                          <li>
+                            <a href="about.html">About Us</a>
+                          </li>
+                          <li>
+                            <a href="#">Shop - Grid</a>
+                          </li>
+                          <li>
+                            <a href="#">Shop - Details</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link " aria-current="page" href="#">Features
+                          <span>
+                              <i class="fa-solid fa-chevron-down"></i>
+                          </span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link " aria-current="page" href="#">Blogs
+                          <span>
+                              <i class="fa-solid fa-chevron-down"></i>
+                          </span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link " aria-current="page" href="#">Contact
+                      </a>
+                    </li>
+                  </ul>
+            </div>
+        </div>
+        </div>
+    </aside>
+    <!-- *sideBar ends -->
+
+    <!-- *nav ends -->
+
+    <!-- *tital ends -->
+    <div id="tital">
+      <div class="container h-100">
+        <div class="row align-content-center h-100">
+          <h1>Shop - Grid</h1>
+          <p>Home / Shop</p>
+        </div>
+      </div>
+    </div>
+    <!-- *tital starts -->
+
+    <!-- *main body starts -->
+    <main>
+        <section id="shop">
+            <div class="container">
+                <div class="top">
+                    <div class="row align-items-center">
+                        <div class="filterIcons col-lg-2 col-xl-1 col-3 p-lg-0 d-none d-md-block">
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                  <button class="nav-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#list" type="button" role="tab" aria-controls="home" aria-selected="true">
+                                    <span><i class="fa-solid fa-list-ul"></i></span>
+                                  </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#grid" type="button" role="tab" aria-controls="home" aria-selected="true">
+                                        <span><i class="fa-solid fa-table-cells-large"></i></span>
+                                    </button>
+                                  </li>
+                              </ul>
+                        </div>
+                        <div class="ShowingProduct col-2 d-none d-xl-block">
+                            <p>Showing 12 of 16 Post</p>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 75%; background-color: #444;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-9 col-lg-10 col-xl-9 selector">
+                            <select name="" id="">
+                                <option value="">Sort by High-Low</option>
+                                <option value="">Sort by Low-High</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="body">
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade" id="list" role="tabpanel" aria-labelledby="home-tab">
+                            <div class="shopProductCardList">
+                                <div class="row">
+                                    <div class="image col-4">
+                                        <img class="w-100" src="./asset/images/shop_product_img1.jpg" alt="">
+                                    </div>
+                                    <div class="ctn col-8">
+                                        <h4>Spaghetti Hoodie</h4>
+                                        <h6>$125.65</h6>
+                                        <span>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </span>
+                                        <p class="d-none d-lg-block">Quickly engage backward-compatible core competencies rather than cross-platform synergy. Intrinsicly disseminate alternative infomediaries through next-generation internal or "organic" sources. Authoritatively procrastinate mission-critical catalysts for change through tactical manufactured products. Credibly target 24/365 niche.</p>
+                                        <div class="shopIcons d-none d-md-block">
+                                            <a href="#"><span style="transition:color .25s, background-color .25s,opacity .5s, transform .5s;"><i class="fa-solid fa-cart-plus"></i></span></a>
+                                            <a href="#"><span style="transition:color .25s, background-color .25s,opacity .5s .2s, transform .5s .2s;"><i class="fa-solid fa-heart"></i></span></a>
+                                            <a href="#"><span style="transition:color .25s, background-color .25s,opacity .5s .4s, transform .5s .4s;"><i class="fa-solid fa-eye"></i></span></a>
+                                            <a href="#"><span style="transition:color .25s, background-color .25s,opacity .5s .6s, transform .5s .6s;"><i class="fa-solid fa-signal"></i></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="shopProductCardList">
+                                <div class="row">
+                                    <div class="image col-4">
+                                        <img class="w-100" src="./asset/images/shop_product_img2.jpg" alt="">
+                                    </div>
+                                    <div class="ctn col-8">
+                                        <h4>Crew Neck Cotton</h4>
+                                        <h6>$125.65</h6>
+                                        <span>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </span>
+                                        <p class="d-none d-lg-block">Quickly engage backward-compatible core competencies rather than cross-platform synergy. Intrinsicly disseminate alternative infomediaries through next-generation internal or "organic" sources. Authoritatively procrastinate mission-critical catalysts for change through tactical manufactured products. Credibly target 24/365 niche.</p>
+                                        <div class="shopIcons d-none d-md-block">
+                                            <a href="#"><span style="transition:color .25s, background-color .25s,opacity .5s, transform .5s;"><i class="fa-solid fa-cart-plus"></i></span></a>
+                                            <a href="#"><span style="transition:color .25s, background-color .25s,opacity .5s .2s, transform .5s .2s;"><i class="fa-solid fa-heart"></i></span></a>
+                                            <a href="#"><span style="transition:color .25s, background-color .25s,opacity .5s .4s, transform .5s .4s;"><i class="fa-solid fa-eye"></i></span></a>
+                                            <a href="#"><span style="transition:color .25s, background-color .25s,opacity .5s .6s, transform .5s .6s;"><i class="fa-solid fa-signal"></i></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="shopProductCardList">
+                                <div class="row">
+                                    <div class="image col-4">
+                                        <img class="w-100" src="./asset/images/shop_product_img3.jpg" alt="">
+                                    </div>
+                                    <div class="ctn col-8">
+                                        <h4>Spaghetti Strap Dress</h4>
+                                        <h6>$125.65</h6>
+                                        <span>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </span>
+                                        <p class="d-none d-lg-block">Quickly engage backward-compatible core competencies rather than cross-platform synergy. Intrinsicly disseminate alternative infomediaries through next-generation internal or "organic" sources. Authoritatively procrastinate mission-critical catalysts for change through tactical manufactured products. Credibly target 24/365 niche.</p>
+                                        <div class="shopIcons d-none d-md-block">
+                                            <a href="#"><span style="transition:color .25s, background-color .25s,opacity .5s, transform .5s;"><i class="fa-solid fa-cart-plus"></i></span></a>
+                                            <a href="#"><span style="transition:color .25s, background-color .25s,opacity .5s .2s, transform .5s .2s;"><i class="fa-solid fa-heart"></i></span></a>
+                                            <a href="#"><span style="transition:color .25s, background-color .25s,opacity .5s .4s, transform .5s .4s;"><i class="fa-solid fa-eye"></i></span></a>
+                                            <a href="#"><span style="transition:color .25s, background-color .25s,opacity .5s .6s, transform .5s .6s;"><i class="fa-solid fa-signal"></i></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="shopProductCardList">
+                                <div class="row">
+                                    <div class="image col-4">
+                                        <img class="w-100" src="./asset/images/shop_product_img4.jpg" alt="">
+                                    </div>
+                                    <div class="ctn col-8">
+                                        <h4>Pink Neck Frog</h4>
+                                        <h6>$125.65</h6>
+                                        <span>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </span>
+                                        <p class="d-none d-lg-block">Quickly engage backward-compatible core competencies rather than cross-platform synergy. Intrinsicly disseminate alternative infomediaries through next-generation internal or "organic" sources. Authoritatively procrastinate mission-critical catalysts for change through tactical manufactured products. Credibly target 24/365 niche.</p>
+                                        <div class="shopIcons d-none d-md-block">
+                                            <a href="#"><span style="transition:color .25s, background-color .25s,opacity .5s, transform .5s;"><i class="fa-solid fa-cart-plus"></i></span></a>
+                                            <a href="#"><span style="transition:color .25s, background-color .25s,opacity .5s .2s, transform .5s .2s;"><i class="fa-solid fa-heart"></i></span></a>
+                                            <a href="#"><span style="transition:color .25s, background-color .25s,opacity .5s .4s, transform .5s .4s;"><i class="fa-solid fa-eye"></i></span></a>
+                                            <a href="#"><span style="transition:color .25s, background-color .25s,opacity .5s .6s, transform .5s .6s;"><i class="fa-solid fa-signal"></i></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="shopProductCardList">
+                                <div class="row">
+                                    <div class="image col-4">
+                                        <img class="w-100" src="./asset/images/shop_product_img5.jpg" alt="">
+                                    </div>
+                                    <div class="ctn col-8">
+                                        <h4>T-shirt Blouse Sleeve</h4>
+                                        <h6>$125.65</h6>
+                                        <span>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </span>
+                                        <p class="d-none d-lg-block">Quickly engage backward-compatible core competencies rather than cross-platform synergy. Intrinsicly disseminate alternative infomediaries through next-generation internal or "organic" sources. Authoritatively procrastinate mission-critical catalysts for change through tactical manufactured products. Credibly target 24/365 niche.</p>
+                                        <div class="shopIcons d-none d-md-block">
+                                            <a href="#"><span style="transition:color .25s, background-color .25s,opacity .5s, transform .5s;"><i class="fa-solid fa-cart-plus"></i></span></a>
+                                            <a href="#"><span style="transition:color .25s, background-color .25s,opacity .5s .2s, transform .5s .2s;"><i class="fa-solid fa-heart"></i></span></a>
+                                            <a href="#"><span style="transition:color .25s, background-color .25s,opacity .5s .4s, transform .5s .4s;"><i class="fa-solid fa-eye"></i></span></a>
+                                            <a href="#"><span style="transition:color .25s, background-color .25s,opacity .5s .6s, transform .5s .6s;"><i class="fa-solid fa-signal"></i></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="shopProductCardList">
+                                <div class="row">
+                                    <div class="image col-4">
+                                        <img class="w-100" src="./asset/images/shop_product_img6.jpg" alt="">
+                                    </div>
+                                    <div class="ctn col-8">
+                                        <h4>Crew Neck T-shirt</h4>
+                                        <h6>$125.65</h6>
+                                        <span>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </span>
+                                        <p class="d-none d-lg-block">Quickly engage backward-compatible core competencies rather than cross-platform synergy. Intrinsicly disseminate alternative infomediaries through next-generation internal or "organic" sources. Authoritatively procrastinate mission-critical catalysts for change through tactical manufactured products. Credibly target 24/365 niche.</p>
+                                        <div class="shopIcons d-none d-md-block">
+                                            <a href="#"><span style="transition:color .25s, background-color .25s,opacity .5s, transform .5s;"><i class="fa-solid fa-cart-plus"></i></span></a>
+                                            <a href="#"><span style="transition:color .25s, background-color .25s,opacity .5s .2s, transform .5s .2s;"><i class="fa-solid fa-heart"></i></span></a>
+                                            <a href="#"><span style="transition:color .25s, background-color .25s,opacity .5s .4s, transform .5s .4s;"><i class="fa-solid fa-eye"></i></span></a>
+                                            <a href="#"><span style="transition:color .25s, background-color .25s,opacity .5s .6s, transform .5s .6s;"><i class="fa-solid fa-signal"></i></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade show active" id="grid" role="tabpanel" aria-labelledby="home-tab">
+                            <div class="row">
+                                <div class="productCard col-lg-4 col-xl-3 col-sm-6 col-12">
+                                    <div class="image">
+                                        <img src="./asset/images/shop_product_img1.jpg" alt="">
+                                        <div class="overly d-none d-lg-block">
+                                            <a href="#"><span style="transition:color .25s, background-color .25s,opacity .5s, transform .5s;"><i class="fa-solid fa-cart-plus"></i></span></a>
+                                            <a href="#"><span style="transition:color .25s, background-color .25s,opacity .5s .2s, transform .5s .2s;"><i class="fa-solid fa-heart"></i></span></a>
+                                            <a href="#"><span style="transition:color .25s, background-color .25s,opacity .5s .4s, transform .5s .4s;"><i class="fa-solid fa-eye"></i></span></a>
+                                            <a href="#"><span style="transition:color .25s, background-color .25s,opacity .5s .6s, transform .5s .6s;"><i class="fa-solid fa-signal"></i></span></a>
+                                        </div>
+                                        <div class="tag">
+                                            <p>New</p>
+                                        </div>
+                                    </div>
+                                    <div class="ctn">
+                                        <div class="row">
+                                            <h4 class="col-8">Spaghetti Hoodie</h4>
+                                            <p class="col-4">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <span>(5)</span>
+                                            </p>
+                                        </div>
+                                        <h6>$125.65</h6>
+                                        <div class="mobileShopIcons w-100 d-lg-none d-block">
+                                            <div class="row">
+                                                <a class="col-10 col-sm-8" href="#"><span style="transition:color .25s, background-color .25s,opacity .5s, transform .5s;"><i class="fa-solid fa-cart-plus"></i></span></a>
+                                                <a class="col-2 col-sm-4" href="#"><span style="transition:color .25s, background-color .25s,opacity .5s .2s, transform .5s .2s;"><i class="fa-solid fa-heart"></i></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="productCard col-lg-4 col-xl-3 col-sm-6 col-12">
+                                    <div class="image">
+                                        <img src="./asset/images/shop_product_img2.jpg" alt="">
+                                        <div class="overly d-none d-lg-block">
+                                            <a href="#"><span style="transition:color .25s, background-color .25s,opacity .5s, transform .5s;"><i class="fa-solid fa-cart-plus"></i></span></a>
+                                            <a href="#"><span style="transition:color .25s, background-color .25s,opacity .5s .2s, transform .5s .2s;"><i class="fa-solid fa-heart"></i></span></a>
+                                            <a href="#"><span style="transition:color .25s, background-color .25s,opacity .5s .4s, transform .5s .4s;"><i class="fa-solid fa-eye"></i></span></a>
+                                            <a href="#"><span style="transition:color .25s, background-color .25s,opacity .5s .6s, transform .5s .6s;"><i class="fa-solid fa-signal"></i></span></a>
+                                          </div>
+                                    </div>
+                                    <div class="ctn">
+                                        <div class="row">
+                                            <h4 class="col-8">Crew Neck Cotton</h4>
+                                            <p class="col-4">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <span>(5)</span>
+                                            </p>
+                                        </div>
+                                        <h6>$150.65</h6>
+                                        <div class="mobileShopIcons w-100 d-lg-none d-block">
+                                            <div class="row">
+                                                <a class="col-10 col-sm-8" href="#"><span style="transition:color .25s, background-color .25s,opacity .5s, transform .5s;"><i class="fa-solid fa-cart-plus"></i></span></a>
+                                                <a class="col-2 col-sm-4" href="#"><span style="transition:color .25s, background-color .25s,opacity .5s .2s, transform .5s .2s;"><i class="fa-solid fa-heart"></i></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="productCard col-lg-4 col-xl-3 col-sm-6 col-12">
+                                    <div class="image">
+                                        <img src="./asset/images/shop_product_img3.jpg" alt="">
+                                        <div class="overly d-none d-lg-block">
+                                            <a href="#"><span style="transition:color .25s, background-color .25s,opacity .5s, transform .5s;"><i class="fa-solid fa-cart-plus"></i></span></a>
+                                            <a href="#"><span style="transition:color .25s, background-color .25s,opacity .5s .2s, transform .5s .2s;"><i class="fa-solid fa-heart"></i></span></a>
+                                            <a href="#"><span style="transition:color .25s, background-color .25s,opacity .5s .4s, transform .5s .4s;"><i class="fa-solid fa-eye"></i></span></a>
+                                            <a href="#"><span style="transition:color .25s, background-color .25s,opacity .5s .6s, transform .5s .6s;"><i class="fa-solid fa-signal"></i></span></a>
+                                          </div>
+                                          <div class="tag">
+                                            <p>New</p>
+                                        </div>
+                                    </div>
+                                    <div class="ctn">
+                                        <div class="row">
+                                            <h4 class="col-8">Spaghetti Strap Dress</h4>
+                                            <p class="col-4">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <span>(5)</span>
+                                            </p>
+                                        </div>
+                                        <h6>$125.65</h6>
+                                        <div class="mobileShopIcons w-100 d-lg-none d-block">
+                                            <div class="row">
+                                                <a class="col-10 col-sm-8" href="#"><span style="transition:color .25s, background-color .25s,opacity .5s, transform .5s;"><i class="fa-solid fa-cart-plus"></i></span></a>
+                                                <a class="col-2 col-sm-4" href="#"><span style="transition:color .25s, background-color .25s,opacity .5s .2s, transform .5s .2s;"><i class="fa-solid fa-heart"></i></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="productCard col-lg-4 col-xl-3 col-sm-6 col-12">
+                                    <div class="image">
+                                        <img src="./asset/images/shop_product_img4.jpg" alt="">
+                                        <div class="overly d-none d-lg-block">
+                                            <a href="#"><span style="transition:color .25s, background-color .25s,opacity .5s, transform .5s;"><i class="fa-solid fa-cart-plus"></i></span></a>
+                                            <a href="#"><span style="transition:color .25s, background-color .25s,opacity .5s .2s, transform .5s .2s;"><i class="fa-solid fa-heart"></i></span></a>
+                                            <a href="#"><span style="transition:color .25s, background-color .25s,opacity .5s .4s, transform .5s .4s;"><i class="fa-solid fa-eye"></i></span></a>
+                                            <a href="#"><span style="transition:color .25s, background-color .25s,opacity .5s .6s, transform .5s .6s;"><i class="fa-solid fa-signal"></i></span></a>
+                                          </div>
+                                          <div class="tag">
+                                            <p>New</p>
+                                        </div>
+                                    </div>
+                                    <div class="ctn">
+                                        <div class="row">
+                                            <h4 class="col-8">Pink Neck Frog</h4>
+                                            <p class="col-4">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <span>(5)</span>
+                                            </p>
+                                        </div>
+                                        <h6>$350.65</h6>
+                                        <div class="mobileShopIcons w-100 d-lg-none d-block">
+                                            <div class="row">
+                                                <a class="col-10 col-sm-8" href="#"><span style="transition:color .25s, background-color .25s,opacity .5s, transform .5s;"><i class="fa-solid fa-cart-plus"></i></span></a>
+                                                <a class="col-2 col-sm-4" href="#"><span style="transition:color .25s, background-color .25s,opacity .5s .2s, transform .5s .2s;"><i class="fa-solid fa-heart"></i></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="productCard col-lg-4 col-xl-3 col-sm-6 col-12">
+                                    <div class="image">
+                                        <img src="./asset/images/shop_product_img5.jpg" alt="">
+                                        <div class="overly d-none d-lg-block">
+                                            <a href="#"><span style="transition:color .25s, background-color .25s,opacity .5s, transform .5s;"><i class="fa-solid fa-cart-plus"></i></span></a>
+                                            <a href="#"><span style="transition:color .25s, background-color .25s,opacity .5s .2s, transform .5s .2s;"><i class="fa-solid fa-heart"></i></span></a>
+                                            <a href="#"><span style="transition:color .25s, background-color .25s,opacity .5s .4s, transform .5s .4s;"><i class="fa-solid fa-eye"></i></span></a>
+                                            <a href="#"><span style="transition:color .25s, background-color .25s,opacity .5s .6s, transform .5s .6s;"><i class="fa-solid fa-signal"></i></span></a>
+                                          </div>
+                                          <div class="tag">
+                                            <p>New</p>
+                                        </div>
+                                    </div>
+                                    <div class="ctn">
+                                        <div class="row">
+                                            <h4 class="col-8">T-shirt Blouse Sleeve</h4>
+                                            <p class="col-4">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <span>(5)</span>
+                                            </p>
+                                        </div>
+                                        <h6>$125.65</h6>
+                                        <div class="mobileShopIcons w-100 d-lg-none d-block">
+                                            <div class="row">
+                                                <a class="col-10 col-sm-8" href="#"><span style="transition:color .25s, background-color .25s,opacity .5s, transform .5s;"><i class="fa-solid fa-cart-plus"></i></span></a>
+                                                <a class="col-2 col-sm-4" href="#"><span style="transition:color .25s, background-color .25s,opacity .5s .2s, transform .5s .2s;"><i class="fa-solid fa-heart"></i></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="productCard col-lg-4 col-xl-3 col-sm-6 col-12">
+                                    <div class="image">
+                                        <img src="./asset/images/shop_product_img6.jpg" alt="">
+                                        <div class="overly d-none d-lg-block">
+                                            <a href="#"><span style="transition:color .25s, background-color .25s,opacity .5s, transform .5s;"><i class="fa-solid fa-cart-plus"></i></span></a>
+                                            <a href="#"><span style="transition:color .25s, background-color .25s,opacity .5s .2s, transform .5s .2s;"><i class="fa-solid fa-heart"></i></span></a>
+                                            <a href="#"><span style="transition:color .25s, background-color .25s,opacity .5s .4s, transform .5s .4s;"><i class="fa-solid fa-eye"></i></span></a>
+                                            <a href="#"><span style="transition:color .25s, background-color .25s,opacity .5s .6s, transform .5s .6s;"><i class="fa-solid fa-signal"></i></span></a>
+                                          </div>
+                                    </div>
+                                    <div class="ctn">
+                                        <div class="row">
+                                            <h4 class="col-8">Crew Neck T-shirt</h4>
+                                            <p class="col-4">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <span>(5)</span>
+                                            </p>
+                                        </div>
+                                        <h6>$150.65</h6>
+                                        <div class="mobileShopIcons w-100 d-lg-none d-block">
+                                            <div class="row">
+                                                <a class="col-10 col-sm-8" href="#"><span style="transition:color .25s, background-color .25s,opacity .5s, transform .5s;"><i class="fa-solid fa-cart-plus"></i></span></a>
+                                                <a class="col-2 col-sm-4" href="#"><span style="transition:color .25s, background-color .25s,opacity .5s .2s, transform .5s .2s;"><i class="fa-solid fa-heart"></i></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="productCard col-lg-4 col-xl-3 col-sm-6 col-12">
+                                    <div class="image">
+                                        <img src="./asset/images/shop_product_img7.jpg" alt="">
+                                        <div class="overly d-none d-lg-block">
+                                            <a href="#"><span style="transition:color .25s, background-color .25s,opacity .5s, transform .5s;"><i class="fa-solid fa-cart-plus"></i></span></a>
+                                            <a href="#"><span style="transition:color .25s, background-color .25s,opacity .5s .2s, transform .5s .2s;"><i class="fa-solid fa-heart"></i></span></a>
+                                            <a href="#"><span style="transition:color .25s, background-color .25s,opacity .5s .4s, transform .5s .4s;"><i class="fa-solid fa-eye"></i></span></a>
+                                            <a href="#"><span style="transition:color .25s, background-color .25s,opacity .5s .6s, transform .5s .6s;"><i class="fa-solid fa-signal"></i></span></a>
+                                          </div>
+                                          <div class="tag">
+                                            <p>New</p>
+                                        </div>
+                                    </div>
+                                    <div class="ctn">
+                                        <div class="row">
+                                            <h4 class="col-8">Blouse Jacket</h4>
+                                            <p class="col-4">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <span>(5)</span>
+                                            </p>
+                                        </div>
+                                        <h6>$125.65</h6>
+                                        <div class="mobileShopIcons w-100 d-lg-none d-block">
+                                            <div class="row">
+                                                <a class="col-10 col-sm-8" href="#"><span style="transition:color .25s, background-color .25s,opacity .5s, transform .5s;"><i class="fa-solid fa-cart-plus"></i></span></a>
+                                                <a class="col-2 col-sm-4" href="#"><span style="transition:color .25s, background-color .25s,opacity .5s .2s, transform .5s .2s;"><i class="fa-solid fa-heart"></i></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="productCard col-lg-4 col-xl-3 col-sm-6 col-12">
+                                    <div class="image">
+                                        <img src="./asset/images/shop_product_img8.jpg" alt="">
+                                        <div class="overly d-none d-lg-block">
+                                            <a href="#"><span style="transition:color .25s, background-color .25s,opacity .5s, transform .5s;"><i class="fa-solid fa-cart-plus"></i></span></a>
+                                            <a href="#"><span style="transition:color .25s, background-color .25s,opacity .5s .2s, transform .5s .2s;"><i class="fa-solid fa-heart"></i></span></a>
+                                            <a href="#"><span style="transition:color .25s, background-color .25s,opacity .5s .4s, transform .5s .4s;"><i class="fa-solid fa-eye"></i></span></a>
+                                            <a href="#"><span style="transition:color .25s, background-color .25s,opacity .5s .6s, transform .5s .6s;"><i class="fa-solid fa-signal"></i></span></a>
+                                          </div>
+                                    </div>
+                                    <div class="ctn">
+                                        <div class="row">
+                                            <h4 class="col-8">Hoodie Sweater Bluza</h4>
+                                            <p class="col-4">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <span>(5)</span>
+                                            </p>
+                                        </div>
+                                        <h6>$350.65</h6>
+                                        <div class="mobileShopIcons w-100 d-lg-none d-block">
+                                            <div class="row">
+                                                <a class="col-10 col-sm-8" href="#"><span style="transition:color .25s, background-color .25s,opacity .5s, transform .5s;"><i class="fa-solid fa-cart-plus"></i></span></a>
+                                                <a class="col-2 col-sm-4" href="#"><span style="transition:color .25s, background-color .25s,opacity .5s .2s, transform .5s .2s;"><i class="fa-solid fa-heart"></i></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="productCard col-lg-4 col-xl-3 col-sm-6 col-12">
+                                    <div class="image">
+                                        <img src="./asset/images/shop_product_img9.jpg" alt="">
+                                        <div class="overly d-none d-lg-block">
+                                            <a href="#"><span style="transition:color .25s, background-color .25s,opacity .5s, transform .5s;"><i class="fa-solid fa-cart-plus"></i></span></a>
+                                            <a href="#"><span style="transition:color .25s, background-color .25s,opacity .5s .2s, transform .5s .2s;"><i class="fa-solid fa-heart"></i></span></a>
+                                            <a href="#"><span style="transition:color .25s, background-color .25s,opacity .5s .4s, transform .5s .4s;"><i class="fa-solid fa-eye"></i></span></a>
+                                            <a href="#"><span style="transition:color .25s, background-color .25s,opacity .5s .6s, transform .5s .6s;"><i class="fa-solid fa-signal"></i></span></a>
+                                          </div>
+                                          <div class="tag">
+                                            <p>New</p>
+                                        </div>
+                                    </div>
+                                    <div class="ctn">
+                                        <div class="row">
+                                            <h4 class="col-8">Hoodie Coat Outerwear</h4>
+                                            <p class="col-4">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <span>(5)</span>
+                                            </p>
+                                        </div>
+                                        <h6>$125.65</h6>
+                                        <div class="mobileShopIcons w-100 d-lg-none d-block">
+                                            <div class="row">
+                                                <a class="col-10 col-sm-8" href="#"><span style="transition:color .25s, background-color .25s,opacity .5s, transform .5s;"><i class="fa-solid fa-cart-plus"></i></span></a>
+                                                <a class="col-2 col-sm-4" href="#"><span style="transition:color .25s, background-color .25s,opacity .5s .2s, transform .5s .2s;"><i class="fa-solid fa-heart"></i></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="productCard col-lg-4 col-xl-3 col-sm-6 col-12">
+                                    <div class="image">
+                                        <img src="./asset/images/shop_product_img10.jpg" alt="">
+                                        <div class="overly d-none d-lg-block">
+                                            <a href="#"><span style="transition:color .25s, background-color .25s,opacity .5s, transform .5s;"><i class="fa-solid fa-cart-plus"></i></span></a>
+                                            <a href="#"><span style="transition:color .25s, background-color .25s,opacity .5s .2s, transform .5s .2s;"><i class="fa-solid fa-heart"></i></span></a>
+                                            <a href="#"><span style="transition:color .25s, background-color .25s,opacity .5s .4s, transform .5s .4s;"><i class="fa-solid fa-eye"></i></span></a>
+                                            <a href="#"><span style="transition:color .25s, background-color .25s,opacity .5s .6s, transform .5s .6s;"><i class="fa-solid fa-signal"></i></span></a>
+                                          </div>
+                                          <div class="tag">
+                                            <p>New</p>
+                                        </div>
+                                    </div>
+                                    <div class="ctn">
+                                        <div class="row">
+                                            <h4 class="col-8">Flight jacket</h4>
+                                            <p class="col-4">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <span>(5)</span>
+                                            </p>
+                                        </div>
+                                        <h6>$150.65</h6>
+                                        <div class="mobileShopIcons w-100 d-lg-none d-block">
+                                            <div class="row">
+                                                <a class="col-10 col-sm-8" href="#"><span style="transition:color .25s, background-color .25s,opacity .5s, transform .5s;"><i class="fa-solid fa-cart-plus"></i></span></a>
+                                                <a class="col-2 col-sm-4" href="#"><span style="transition:color .25s, background-color .25s,opacity .5s .2s, transform .5s .2s;"><i class="fa-solid fa-heart"></i></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="productCard col-lg-4 col-xl-3 col-sm-6 col-12">
+                                    <div class="image">
+                                        <img src="./asset/images/shop_product_img11.jpg" alt="">
+                                        <div class="overly d-none d-lg-block">
+                                            <a href="#"><span style="transition:color .25s, background-color .25s,opacity .5s, transform .5s;"><i class="fa-solid fa-cart-plus"></i></span></a>
+                                            <a href="#"><span style="transition:color .25s, background-color .25s,opacity .5s .2s, transform .5s .2s;"><i class="fa-solid fa-heart"></i></span></a>
+                                            <a href="#"><span style="transition:color .25s, background-color .25s,opacity .5s .4s, transform .5s .4s;"><i class="fa-solid fa-eye"></i></span></a>
+                                            <a href="#"><span style="transition:color .25s, background-color .25s,opacity .5s .6s, transform .5s .6s;"><i class="fa-solid fa-signal"></i></span></a>
+                                          </div>
+                                    </div>
+                                    <div class="ctn">
+                                        <div class="row">
+                                            <h4 class="col-8">Shoulder Dress, Plus-size</h4>
+                                            <p class="col-4">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <span>(5)</span>
+                                            </p>
+                                        </div>
+                                        <h6>$125.65</h6>
+                                        <div class="mobileShopIcons w-100 d-lg-none d-block">
+                                            <div class="row">
+                                                <a class="col-10 col-sm-8" href="#"><span style="transition:color .25s, background-color .25s,opacity .5s, transform .5s;"><i class="fa-solid fa-cart-plus"></i></span></a>
+                                                <a class="col-2 col-sm-4" href="#"><span style="transition:color .25s, background-color .25s,opacity .5s .2s, transform .5s .2s;"><i class="fa-solid fa-heart"></i></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="productCard col-lg-4 col-xl-3 col-sm-6 col-12">
+                                    <div class="image">
+                                        <img src="./asset/images/shop_product_img12.jpg" alt="">
+                                        <div class="overly d-none d-lg-block">
+                                            <a href="#"><span style="transition:color .25s, background-color .25s,opacity .5s, transform .5s;"><i class="fa-solid fa-cart-plus"></i></span></a>
+                                            <a href="#"><span style="transition:color .25s, background-color .25s,opacity .5s .2s, transform .5s .2s;"><i class="fa-solid fa-heart"></i></span></a>
+                                            <a href="#"><span style="transition:color .25s, background-color .25s,opacity .5s .4s, transform .5s .4s;"><i class="fa-solid fa-eye"></i></span></a>
+                                            <a href="#"><span style="transition:color .25s, background-color .25s,opacity .5s .6s, transform .5s .6s;"><i class="fa-solid fa-signal"></i></span></a>
+                                          </div>
+                                          <div class="tag">
+                                            <p>New</p>
+                                        </div>
+                                    </div>
+                                    <div class="ctn">
+                                        <div class="row">
+                                            <h4 class="col-8">Pajamas Nightwear</h4>
+                                            <p class="col-4">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <span>(5)</span>
+                                            </p>
+                                        </div>
+                                        <h6>$350.65</h6>
+                                        <div class="mobileShopIcons w-100 d-lg-none d-block">
+                                            <div class="row">
+                                                <a class="col-10 col-sm-8" href="#"><span style="transition:color .25s, background-color .25s,opacity .5s, transform .5s;"><i class="fa-solid fa-cart-plus"></i></span></a>
+                                                <a class="col-2 col-sm-4" href="#"><span style="transition:color .25s, background-color .25s,opacity .5s .2s, transform .5s .2s;"><i class="fa-solid fa-heart"></i></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- *main body ends -->
+
+    <!-- *footer starts -->
+    <footer>
+        <div class="container">
+          <div class="row footerHeading gy-3 gy-lg-0">
+            <div class="col-lg-4 col-12 order-lg-1 order-2 socalIcons">
+              <a href="#"><span><i class="fa-brands fa-facebook-f"></i></span></a>
+              <a href="#"><span><i class="fa-brands fa-x-twitter"></i></span></a>
+              <a href="#"><span><i class="fa-brands fa-instagram"></i></span></a>
+              <a href="#"><span><i class="fa-brands fa-pinterest-p"></i></span></a>
+            </div>
+            <div class="col-lg-4 col-12 order-lg-2 order-1 footerLogo ">
+              <a href="#"><img src="./asset/images/aytor_logo_footer.png" alt=""></a>
+            </div>
+            <div class="col-lg-4 col-12 d-lg-block order-3 d-none paymentCards">
+              <a href="#">
+                <img src="./asset/images/paymentCardIcons.png" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="footerBody row gy-4 gy-sm-5 gy-lg-0">
+            <div class="col-lg-2 col-12 col-sm-4 myAccount">
+              <h4>My Account</h4>
+              <ul>
+                <li><a href="#"><span><i class="fa-solid fa-chevron-right"></i></span> My Account</a></li>
+                <li><a href="#"><span><i class="fa-solid fa-chevron-right"></i></span> View Cart</a></li>
+                <li><a href="#"><span><i class="fa-solid fa-chevron-right"></i></span> Wishlist</a></li>
+                <li><a href="#"><span><i class="fa-solid fa-chevron-right"></i></span> Compare</a></li>
+                <li><a href="#"><span><i class="fa-solid fa-chevron-right"></i></span> New Products</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-12 col-sm-4 support">
+              <h4>Support</h4>
+              <ul>
+                <li><a href="#"><span><i class="fa-solid fa-chevron-right"></i></span> Help</a></li>
+                <li><a href="#"><span><i class="fa-solid fa-chevron-right"></i></span> Contact Us</a></li>
+                <li><a href="#"><span><i class="fa-solid fa-chevron-right"></i></span> Feedback</a></li>
+                <li><a href="#"><span><i class="fa-solid fa-chevron-right"></i></span> Customer Service</a></li>
+                <li><a href="#"><span><i class="fa-solid fa-chevron-right"></i></span> Store Locations</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-12 col-sm-4 openingTime p-lg-0 ">
+              <h4>Opening Time</h4>
+              <ul>
+                <li>
+                  <div class="row">
+                    <p class="col-sm-5 col-3">Mon-Tue:</p>
+                    <span class="col-sm-7 col-3">8AM-10PM</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="row">
+                    <p class="col-sm-5 col-3">Wed:</p>
+                    <span class="col-sm-7 col-3">8AM-7PM</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="row">
+                    <p class="col-sm-5 col-3">Fri:</p>
+                    <span class="col-sm-7 col-3 ">7AM-12PM</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="row">
+                    <p class="col-sm-5 col-3">Sat:</p>
+                    <span class="col-sm-7 col-3 ">9AM-8PM</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="row">
+                    <p class="col-sm-5 col-3">Sun:</p>
+                    <span class="col-sm-7 col-3">Closed</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-12 col-sm-6 contactUs">
+              <h4>Contact Us</h4>
+              <address><span><i class="fa-solid fa-location-dot"></i></span> 830 Broad way, New York, NY 10003, United States</address>
+              <a href="tel:+18008660286"><span><i class="fa-solid fa-phone"></i></span> +18008660286</a>
+              <a href="mailto:aetor.info@gmail.com"><span><i class="fa-solid fa-envelope"></i></span> aetor.info@gmail.com</a>
+              <a href="mailto:info@aetor.com">info@aetor.com</a>
+            </div>
+            <div class="col-lg-3 col-12 col-sm-6 newsLetter">
+              <h4 >News Letter</h4>
+              <p>Authoritatively morph 24/7 potentialities with error-free partnerships.</p>
+              <form action="#" method="get">
+                <div class="">
+                  <input class="" type="text" placeholder="Enter your email....">
+                  <button class="">Subscribe</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="footerBottom">
+          <p>© 2022 All Rights Reserved <span>Aytor</span> By <span>Angfuzsoft</span>.</p>
+        </div>
+    </footer>
+    <!-- *footer ends -->
+    
+    <!-- *jquary js -->
+    <script src="./asset/vendor/js/jquery-3.7.1.min.js"></script>
+
+    <!-- *bootstrap js -->
+    <script src="./asset/vendor/js/bootstrap.bundle.min.js"></script>
+
+    <!-- *fontawsome js -->
+    <script src="./asset/vendor/js/all.min.js"></script>
+
+    <!-- *infinity counter js-->
+    <script src="./asset/vendor/js/jquery.countdown.min.js"></script>
+
+    <!-- *aos js -->
+    <script src="./asset/vendor/js/aos.js"></script>
+
+    <!-- *counter js -->
+    <script src="https://unpkg.com/counterup2@2.0.2/dist/index.js"></script>
+
+    <!-- *count me js -->
+    <script src="./asset/vendor/js/countMe.min.js"></script>
+
+    <!-- *slick js -->
+    <script src="./asset/vendor/js/slick.min.js"></script>
+
+    <!-- *venobox js -->
+    <script src="./asset/vendor/js/venobox.min.js"></script>
+
+    <!-- *my js -->
+    <script src="./asset/js/app.js"></script>
+  </body>
+  </html>
+
+    
