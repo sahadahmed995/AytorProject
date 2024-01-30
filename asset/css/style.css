@@ -524,11 +524,13 @@ aside .offcanvas-body ul .dropDownCtn.active {
   font-weight: 600;
   margin: 5px 0px 10px 0;
   text-transform: capitalize;
+  height: 40px;
 }
 @media (320px <= width <= 575px) {
   #newArrivals .newArrivalsSlide .productInfo h4 {
     font-size: 14px;
     margin-bottom: 5px;
+    height: 30px;
   }
 }
 #newArrivals .newArrivalsSlide .productInfo span {
@@ -788,11 +790,13 @@ aside .offcanvas-body ul .dropDownCtn.active {
   font-weight: 600;
   margin: 5px 0px 10px 0;
   text-transform: capitalize;
+  height: 40px;
 }
 @media (320px <= width <= 575px) {
   #bestSeller .bestSellerProduct .bestSellerCtn h4 {
     font-size: 14px;
     margin-bottom: 5px;
+    height: 30px;
   }
 }
 #bestSeller .bestSellerProduct .bestSellerCtn span {
@@ -1267,6 +1271,7 @@ aside .offcanvas-body ul .dropDownCtn.active {
   font-size: 20px;
   font-weight: 600;
   transition: 0.35s;
+  height: 50px;
 }
 #latestNews .latestSlide h4:hover {
   color: #FF6F61;
@@ -1274,6 +1279,7 @@ aside .offcanvas-body ul .dropDownCtn.active {
 @media (320px <= width <= 575px) {
   #latestNews .latestSlide h4 {
     font-size: 18px;
+    height: 40px;
   }
 }
 #latestNews .latestSlide p {
@@ -2102,6 +2108,7 @@ aside .offcanvas-body ul .dropDownCtn.active {
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 10px;
+  height: 40px;
 }
 #shop .body .productCard .ctn p {
   display: inline-block;
@@ -2211,6 +2218,62 @@ aside .offcanvas-body ul .dropDownCtn.active {
 }
 #shop .body .shopProductCardList .ctn .shopIcons span:hover {
   background-color: #FF6F61;
+}
+#shop .bottom ul {
+  text-align: center;
+}
+#shop .bottom ul li {
+  display: inline-block;
+}
+#shop .bottom ul li button {
+  padding: 3px 15px;
+  border: 1px solid #444;
+  color: #11161E;
+  background-color: #fff;
+  transition: 0.35s ease;
+  font-weight: 600;
+}
+#shop .bottom ul li.active button {
+  color: #fff;
+  background-color: #11161E;
+  border-color: transparent;
+}
+#shop .bottom ul li:hover button {
+  color: #fff;
+  background-color: #11161E;
+  border-color: transparent;
+}
+#shop .bottom ul li:first-child button, #shop .bottom ul li:last-child button {
+  border: none;
+}
+#shop .bottom ul li:first-child button:hover, #shop .bottom ul li:last-child button:hover {
+  background-color: #fff;
+  color: #444;
+  text-shadow: 1px 1px 5px #444;
+}
+#shop .pageas {
+  display: none;
+}
+#shop .pageas.active {
+  display: block;
+}
+#shop .gridpages {
+  display: block;
+}
+@media (320px <= width <= 991px) {
+  #shop .gridpages {
+    display: none;
+  }
+  #shop .gridpages.active {
+    display: block;
+  }
+}
+
+#productInfoShow .image .displaySlider {
+  margin-bottom: 20px;
+}
+#productInfoShow .image .navSlider .slide {
+  cursor: pointer;
 }
 
 footer {

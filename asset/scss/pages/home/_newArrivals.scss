@@ -35,9 +35,11 @@
                 font-weight: 600;
                 margin: 5px 0px 10px 0;
                 text-transform: capitalize;
+                height: 40px;
                 @include xs(){
                     font-size: 14px;
                     margin-bottom: 5px;
+                    height: 30px;
                 }
             }
             span{

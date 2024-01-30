@@ -234,11 +234,164 @@ $(function(){
       ]
     })
     // *aytor insta ends
+
+
+    // *shop starts
+
+    $("#shop .bottom .pageBtn1").click(function(e){
+      $("#shop .bottom .pageBtn2").removeClass("active")
+      $("#shop .bottom .pageBtn3").removeClass("active")
+      $(this).addClass("active")
+      $("#shop .page2").removeClass("active")
+      $("#shop .page3").removeClass("active")
+      $("#shop .page1").addClass("active")
+    })
+    $("#shop .bottom .pageBtn2").click(function(e){
+      $("#shop .bottom .pageBtn1").removeClass("active")
+      $("#shop .bottom .pageBtn3").removeClass("active")
+      $(this).addClass("active")
+      $("#shop .page1").removeClass("active")
+      $("#shop .page3").removeClass("active")
+      $("#shop .page2").addClass("active")
+    })
+    $("#shop .bottom .pageBtn3").click(function(e){
+      $("#shop .bottom .pageBtn2").removeClass("active")
+      $("#shop .bottom .pageBtn1").removeClass("active")
+      $(this).addClass("active")
+      $("#shop .page2").removeClass("active")
+      $("#shop .page1").removeClass("active")
+      $("#shop .page3").addClass("active")
+    })
+
+
+
+    // *grid page starts
+    $("#shop .bottom .gridPageBtn1").click(function(e){
+      $("#shop .bottom .gridPageBtn2").removeClass("active")
+      $("#shop .bottom .gridPageBtn3").removeClass("active")
+      $(this).addClass("active")
+      $("#shop .gridPage2").removeClass("active")
+      $("#shop .gridPage3").removeClass("active")
+      $("#shop .gridPage1").addClass("active")
+    })
+    $("#shop .bottom .gridPageBtn2").click(function(e){
+      $("#shop .bottom .gridPageBtn1").removeClass("active")
+      $("#shop .bottom .gridPageBtn3").removeClass("active")
+      $(this).addClass("active")
+      $("#shop .gridPage1").removeClass("active")
+      $("#shop .gridPage3").removeClass("active")
+      $("#shop .gridPage2").addClass("active")
+    })
+    $("#shop .bottom .gridPageBtn3").click(function(e){
+      $("#shop .bottom .gridPageBtn2").removeClass("active")
+      $("#shop .bottom .gridPageBtn1").removeClass("active")
+      $(this).addClass("active")
+      $("#shop .gridPage2").removeClass("active")
+      $("#shop .gridPage1").removeClass("active")
+      $("#shop .gridPage3").addClass("active")
+    })
+
+    // *grid page ends
+    
+    // *shop ends
+
+    // *product detas slider starts
+    $('.displaySlider').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      fade: true,
+      asNavFor: '.navSlider'
+    });
+    $('.navSlider').slick({
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      asNavFor: '.displaySlider',
+      centerMode: true,
+      centerPadding:"0px",
+      focusOnSelect: true,
+      arrows:false,
+    });
+    // *product detas slider ends
 })
 
 var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
 var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
   return new bootstrap.Tooltip(tooltipTriggerEl)
 })
+
+    // *counter starts
+    const counterUp = window.counterUp.default
+    const callback1 = entries => {
+      entries.forEach( entry => {
+        const counter1 = entry.target
+        if ( entry.isIntersecting )  {
+          counterUp( counter1, {
+            duration: 1500,
+            delay: 16,
+          } )
+        }
+      } )
+    }
+    
+    const observer1 = new IntersectionObserver( callback1, { threshold: 1 } )
+    
+    const counter1 = document.querySelector( '.counter1' )
+    observer1.observe( counter1 )
+
+    const callback2 = entries => {
+      entries.forEach( entry => {
+        const counter2 = entry.target
+        if ( entry.isIntersecting )  {
+          counterUp( counter2, {
+            duration: 1500,
+            delay: 16,
+          } )
+        }
+      } )
+    }
+    
+    const observer2 = new IntersectionObserver( callback2, { threshold: 1 } )
+    
+    const counter2 = document.querySelector( '.counter2' )
+    observer2.observe( counter2 )
+
+
+    const callback3 = entries => {
+      entries.forEach( entry => {
+        const counter3 = entry.target
+        if ( entry.isIntersecting )  {
+          counterUp( counter3, {
+            duration: 1500,
+            delay: 16,
+          } )
+        }
+      } )
+    }
+    
+    const observer3 = new IntersectionObserver( callback3, { threshold: 1 } )
+    
+    const counter3 = document.querySelector( '.counter3' )
+    observer3.observe( counter3 )
+
+
+    const callback4 = entries => {
+      entries.forEach( entry => {
+        const counter4 = entry.target
+        if ( entry.isIntersecting )  {
+          counterUp( counter4, {
+            duration: 1500,
+            delay: 16,
+          } )
+        }
+      } )
+    }
+    
+    const observer4 = new IntersectionObserver( callback4, { threshold: 1 } )
+    
+    const counter4 = document.querySelector( '.counter4' )
+    observer4.observe( counter4 )
+    
+    // *counter ends
 
 
