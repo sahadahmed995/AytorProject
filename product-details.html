@@ -15,6 +15,9 @@
     <!-- *slick-slider css -->
     <link rel="stylesheet" href="./asset/vendor/css/slick.css">
 
+    <!-- *nice select css -->
+    <link rel="stylesheet" href="./asset/vendor/css/nice-select2.css">
+
     <!-- *aos css -->
     <link rel="stylesheet" href="./asset/vendor/css/aos.css">
 
@@ -191,25 +194,25 @@
         <section id="productInfoShow">
             <div class="container">
                 <div class="row">
-                    <div class="image col-6">
+                    <div class="image col-12 col-md-6">
                         <div class="displaySlider">
                             <div class="slide">
                                 <img class="w-100" src="./asset/images/product_details-display-img1.jpg" alt="">
                             </div>
                             <div class="slide">
-                                <img class="w-100" src="./asset/images/product_details-display-img1.jpg" alt="">
+                                <img class="w-100" src="./asset/images/product_details-display-img2.jpg" alt="">
                             </div>
                             <div class="slide">
-                                <img class="w-100" src="./asset/images/product_details-display-img1.jpg" alt="">
+                                <img class="w-100" src="./asset/images/product_details-display-img3.jpg" alt="">
                             </div>
                             <div class="slide">
-                                <img class="w-100" src="./asset/images/product_details-display-img1.jpg" alt="">
+                                <img class="w-100" src="./asset/images/product_details-display-img4.jpg" alt="">
                             </div>
                             <div class="slide">
-                                <img class="w-100" src="./asset/images/product_details-display-img1.jpg" alt="">
+                                <img class="w-100" src="./asset/images/product_details-display-img5.jpg" alt="">
                             </div>
                             <div class="slide">
-                                <img class="w-100" src="./asset/images/product_details-display-img1.jpg" alt="">
+                                <img class="w-100" src="./asset/images/product_details-display-img6.jpg" alt="">
                             </div>
                         </div>
                         <div class="navSlider">
@@ -217,24 +220,174 @@
                                 <img class="w-100" src="./asset/images/product_details-img1.jpg" alt="">
                             </div>
                             <div class="slide">
-                                <img class="w-100" src="./asset/images/product_details-img1.jpg" alt="">
+                                <img class="w-100" src="./asset/images/product_details-img2.jpg" alt="">
                             </div>
                             <div class="slide">
-                                <img class="w-100" src="./asset/images/product_details-img1.jpg" alt="">
+                                <img class="w-100" src="./asset/images/product_details-img3.jpg" alt="">
                             </div>
                             <div class="slide">
-                                <img class="w-100" src="./asset/images/product_details-img1.jpg" alt="">
+                                <img class="w-100" src="./asset/images/product_details-img4.jpg" alt="">
                             </div>
                             <div class="slide">
-                                <img class="w-100" src="./asset/images/product_details-img1.jpg" alt="">
+                                <img class="w-100" src="./asset/images/product_details-img5.jpg" alt="">
                             </div>
                             <div class="slide">
-                                <img class="w-100" src="./asset/images/product_details-img1.jpg" alt="">
-                            </div>
+                              <img class="w-100" src="./asset/images/product_details-img6.jpg" alt="">
+                          </div>
                         </div>
+                        <div class="arrows d-none d-lg-block">
+                          <span class="leftArrow"><i class="fa-solid fa-chevron-left"></i></span>
+                          <span class="rightArrow"><i class="fa-solid fa-chevron-right"></i></span>
+                        </div>
+                    </div>
+                    <div class="details col-12 col-md-6">
+                      <h2>Leather Jackets</h2>
+                      <h6>5.00
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        | (5 Customer Review)
+                      </h6>
+                      <h4>$125.65 <span>$150.65</span></h4>
+                      <p class="d-none d-xl-block">Quickly productivate holistic systems after 24/365 e-commerce. Continually synthesize superior catalysts for change via high standards in leadership skills. Collaboratively evisculate distributed functionalities rather than timely methods of empowerment.</p>
+                      <form action="#" method="get">
+                        <div class="row mb-3 ">
+                          <label class="col-2 my-auto" for="size">Size:</label>
+                          <div class="size col-10">
+                            <select class="wide" name="size" id="size">
+                              <option data-display="select">36</option>
+                              <option value="1">38</option>
+                              <option value="2">40</option>
+                              <option value="3">42</option>
+                              <option value="4">44</option>
+                              <option value="5">46</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <label class="col-2 my-auto" for="color">color:</label>
+                          <div class="color col-10">
+                            <select class="wide" name="color" id="color">
+                              <option data-display="select">orange</option>
+                              <option value="1">red</option>
+                              <option value="2">blue</option>
+                              <option value="3">olive</option>
+                              <option value="4">black</option>
+                            </select>
+                          </div>
+                        </div>
+                      </form>
+                      <div class="quantity">
+                        <form action="#">
+                          <label for="">Quantity:</label>
+                          <button class="quantityMinus" type="button">-</button>
+                          <input class="quantityDispaly" type="number" name="" id="" value="1">
+                          <button class="quantityPlus" type="button">+</button>
+                        </form>
+                        <a href="#"><span><i class="fa-solid fa-cart-plus"></i></span> Add To Cart</a>
+                        <a href="#"><span><i class="fa-solid fa-heart"></i></span></a>
+                        <a href="#"><span><i class="fa-solid fa-eye"></i></span></a>
+                      </div>
+                      <div class="row">
+                        <div class="info col-7">
+                          <p>SKU: <span>W0243</span></p>
+                          <p>Tags: <span>Hot, Women</span></p>
+                          <p>Category: <span>Dress, T-Shirt, Mini Scut</span></p>
+                        </div>
+                        <div class="socialIcons col-5">
+                          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                          <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                        </div>
+                      </div>
                     </div>
                 </div>
             </div>
+        </section>
+        <section id="reviewSec">
+          <div class="container">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#description" type="button" role="tab" aria-controls="home" aria-selected="true">Product Description</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#review" type="button" role="tab" aria-controls="home" aria-selected="true">Customer Review(2)</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#information" type="button" role="tab" aria-controls="home" aria-selected="true">Additional Information</button>
+              </li>
+            </ul>
+            <div class="tab-content ctn" id="myTabContent">
+              <div class="tab-pane fade show active" id="description" role="tabpanel" aria-labelledby="home-tab">
+                <p>Conveniently build adaptive users with front-end human capital. Appropriately unleash team building technology for goal-oriented paradigms. Dynamically generate interoperable e-business vis-a-vis goal-oriented value. Completely pursue fully tested content whereas multifunctional core competencies. Progressively scale team driven process improvements before premier functionalities. Holisticly cultivate intermandated methodologies rather than virtual technology. Monotonectally target interactive synergy without process-centric e-markets. Holisticly pursue enterprise-wide leadership skills for enterprise leadership. Collaboratively underwhelm standardized expertise after effective bandwidth. Conveniently productivate holistic collaboration and idea-sharing rather than granular strategic theme areas.
+                </p>
+                <p class="d-none d-lg-block"> Enthusiastically aggregate ethical systems for standardized mindshare. Energistically target resource maximizing leadership skills without backward-compatible action items. Credibly impact alternative expertise vis-a-vis economically sound results. Dynamically synergize empowered benefits through functional partnerships. Authoritatively empower prospective infomediaries for interactive content.
+                  Synergistically embrace 2.0 paradigms through professional intellectual capital. Interactively strategize parallel growth strategies without out-of-the-box web services. Assertively reinvent installed base.</p>
+              </div>
+              <div class="tab-pane fade" id="review" role="tabpanel" aria-labelledby="home-tab">
+                <div class="reviewCard">
+                  <div class="row">
+                    <div class="image col-5 col-lg-2">
+                      <img src="./asset/images/customer_img2.png" alt="">
+                    </div>
+                    <div class="ctn col-7 col-lg-10">
+                      <span><i class="fa-solid fa-star"></i></span>
+                      <span><i class="fa-solid fa-star"></i></span>
+                      <span><i class="fa-solid fa-star"></i></span>
+                      <span><i class="fa-solid fa-star"></i></span>
+                      <span><i class="fa-solid fa-star"></i></span>
+                      <h2>Jon Smith</h2>
+                      <p>Conveniently build adaptive users with front-end human capital. Appropriately unleash team building technology for goal-oriented paradigms</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="reviewCard">
+                  <div class="row">
+                    <div class="image col-5 col-lg-2">
+                      <img src="./asset/images/customer_img3.png" alt="">
+                    </div>
+                    <div class="ctn col-7 col-lg-10">
+                      <span><i class="fa-solid fa-star"></i></span>
+                      <span><i class="fa-solid fa-star"></i></span>
+                      <span><i class="fa-solid fa-star"></i></span>
+                      <span><i class="fa-solid fa-star"></i></span>
+                      <span><i class="fa-solid fa-star"></i></span>
+                      <h2>David lous</h2>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, sequi.</p>
+                    </div>
+                  </div>
+                </div>
+                <form action="#">
+                  <h2>Add Review</h2>
+                  <div class="row">
+                    <div class="name col-sm-6 col-12"><input type="text" name="" id="" placeholder="Enter your name*"></div>
+                    <div class="email col-sm-6 col-12"><input type="email" name="" id="" placeholder="Enter your e-mail*"></div>
+                  </div>
+                  <textarea class="col-12" name="" id="" cols="10" rows="10" placeholder="Write something*"></textarea>
+                  <button type="submit">Post Review</button>
+                </form>
+              </div>
+              <div class="tab-pane fade" id="information" role="tabpanel" aria-labelledby="home-tab">
+                <table>
+                  <tr>
+                    <td>Color :</td>
+                    <td>Orange,Blue,Ovile,Black,Red</td>
+                  </tr>
+                  <tr>
+                    <td>Size :</td>
+                    <td>36,38,40,42,44,46</td>
+                  </tr>
+                  <tr>
+                    <td>Meterial :</td>
+                    <td>Leather</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
         </section>
     </main>
     <!-- *main body ends -->
@@ -347,6 +500,9 @@
 
     <!-- *fontawsome js -->
     <script src="./asset/vendor/js/all.min.js"></script>
+
+    <!-- *nice select js -->
+    <script src="./asset/vendor/js/nice-select2.js"></script>
 
     <!-- *infinity counter js-->
     <script src="./asset/vendor/js/jquery.countdown.min.js"></script>

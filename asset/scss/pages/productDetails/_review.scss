@@ -1,0 +1,206 @@
+#reviewSec{
+    padding-bottom: 100px;
+    @include xs(){
+        padding-bottom: 50px;
+    }
+    @include sm(){
+        padding-bottom: 70px;
+    }
+    .nav{
+        justify-content: center;
+        border: none;
+        @include xs(){
+            flex-direction: column;
+            align-content: center;
+        }
+        li{
+            button{
+                padding: 15px 0;
+                width: 300px;
+                border: none;
+                background-color: $textColor;
+                color: $white;
+                border-radius: 0px;
+                @include xs(){
+                    font-size: 14px;
+                    padding: 10px 0;
+                    width: 250px;
+                }
+                @include sm(){
+                    font-size: 14px;
+                    padding: 10px 0;
+                    width: 150px;
+                }
+                @include md(){
+                    padding: 10px 0;
+                    width: 200px;
+                }
+                &.active{
+                    background-color: $babyPink;
+                }
+            }
+        }
+    }
+    .ctn{
+        #description{
+            padding: 40px 0;
+            @include xs(){
+                padding: 10px 0;
+            }
+            @include sm(){
+                padding: 20px 0;
+            }
+            p{
+                margin: 20px 0;
+                text-align: justify;
+                font-family: $secFont;
+                color: $grayColor;
+                @include xs(){
+                    font-size: 14px;
+                    line-height: 22px;
+                }
+            }
+        }
+        #review{
+            padding: 50px 0;
+            @include xs(){
+                padding: 0px 0;
+            }
+            @include sm(){
+                padding: 10px 0;
+            }
+            @include md(){
+                padding: 20px 0;
+            }
+            .reviewCard{
+                padding: 40px 0;
+                border-bottom: 1px solid #e0e0e0;
+            }
+            img{
+                width: 80%;
+                border: 1px solid #e0e0e0;
+                border-radius: 50%;
+                @include xs(){
+                    width: 100%;
+                }
+            }
+            .ctn{
+                span{
+                    color: $babyPink;
+                    @include xs(){
+                        font-size: 14px;
+                    }
+                }
+                h2{
+                    font-size: 28px;
+                    margin: 6px 0;
+                    @include xs(){
+                        font-size: 22px;
+                    }
+                }
+                p{
+                    font-family: $secFont;
+                    @include xs(){
+                        font-size: 12px;
+                    }
+                }
+            }
+            form{
+                box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+                padding: 40px;
+                margin-top: 40px;
+                @include xs(){
+                    padding: 20px;
+                }
+                h2{
+                    font-weight: 700;
+                    margin-bottom: 50px;
+                    @include xs(){
+                        font-size: 20px;
+                        margin-bottom: 20px;
+                    }
+                    @include sm(){
+                        margin-bottom: 30px;
+                    }
+                }
+                input{
+                    background-color: $white;
+                    border-radius: none;
+                    border: 1px solid #e0e0e0;
+                    padding: 10px 20px;
+                    display: block;
+                    width: 100%;
+                    &:focus{
+                        outline: none;
+                        &::placeholder{
+                            color: transparent;
+                        }
+                    }
+                    @include xs(){
+                        margin-bottom: 20px;
+                    }
+                }
+                textarea{
+                    background-color: $white;
+                    border-radius: none;
+                    border: 1px solid #e0e0e0;
+                    padding: 10px 20px;
+                    display: block;
+                    margin-top: 40px;
+                    height: 200px;
+                    &:focus{
+                        outline: none;
+                        &::placeholder{
+                            color: transparent;
+                        }
+                    }
+                    @include xs(){
+                        margin-top: 0;
+                        height: 120px;
+                    }
+                    @include sm(){
+                        height: 150px;
+                    }
+                }
+                button{
+                    background-color: $babyPink;
+                    padding: 10px 40px;
+                    border: 1px solid transparent;
+                    color: $white;
+                    font-weight: 600;
+                    transition: .35s ease;
+                    margin-top: 40px;
+                    &:hover{
+                        background-color: $white;
+                        border: 1px solid $babyPink;
+                        color: $babyPink;
+                    }
+                    @include xs(){
+                        font-size: 14px;
+                        padding: 8px 20px;
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+        #information{
+            padding: 50px 0;
+            @include xs(){
+                padding: 30px 0;
+            }
+            table{
+                width: 100%;
+                tr{
+                    td{
+                        width: 50%;
+                        padding: 10px 10px;
+                        border: 1px solid #e0e0e0;
+                        @include xs(){
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

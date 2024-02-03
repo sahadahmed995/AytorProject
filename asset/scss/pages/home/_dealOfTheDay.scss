@@ -26,6 +26,7 @@
         box-shadow: 0px 0px 70px 0px rgba(21, 26, 50, 0.08);
         padding: 0px 0px 85px 0;
         margin-top: 70px;
+        
         @include xs(){
             padding: 0px 0px 60px 0;
         }
@@ -101,6 +102,32 @@
             padding: 35px 100px 120px 40px;
             color: $textColor;
             margin: 0 33px;
+            opacity: 0;
+            transition: opacity 1s;
+            transition-delay: 200ms;
+            &.slick-active{
+                animation: fade-down 1s ease 1;
+                opacity: 1;
+            }
+            @keyframes fade-down {
+                0%{
+                    transform: translateY(-100%);
+                }
+                100%{
+                    transform: translateY(0);
+                }
+            }
+            &.slick-current{
+                animation: fade-up 1s ease 1;
+            }
+            @keyframes fade-up {
+                0%{
+                    transform: translateY(100%);
+                }
+                100%{
+                    transform: translateY(0);
+                }
+            }
             @include xs(){
                 margin: 0px 15px;
                 padding: 15px 20px;

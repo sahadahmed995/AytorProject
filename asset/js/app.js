@@ -37,7 +37,7 @@ $(function(){
         arrows: false,
         dots: true,
         dotsClass: "container slick-dots",
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 3000,
         speed:1000,
         pauseOnHover:false,
@@ -310,9 +310,55 @@ $(function(){
       centerMode: true,
       centerPadding:"0px",
       focusOnSelect: true,
-      arrows:false,
+      arrows:true,
+      prevArrow:".leftArrow",
+      nextArrow:".rightArrow",
+      responsive: [
+        {
+          breakpoint: 1199,
+          settings:{
+            slidesToShow: 3,
+            slidesToScroll:1,
+          },
+        },
+        {
+          breakpoint: 991,
+          settings:{
+            slidesToShow: 3,
+            slidesToScroll:2,
+          },
+        },
+        {
+          breakpoint: 575,
+          settings:{
+            slidesToShow: 3,
+            slidesToScroll:1,
+            arrows:false,
+          },
+        },
+      ]
     });
     // *product detas slider ends
+
+    // *nice select stats
+    NiceSelect.bind(document.getElementById("size"));
+    NiceSelect.bind(document.getElementById("color"));
+    // *nice select ends
+    // *quantity starts
+    let x = 1
+    $(".quantityPlus").click(function(){
+      if (x < 10) {
+        x = parseInt($(".quantityDispaly").val()) + 1
+        $(".quantityDispaly").val(x);
+      }
+    })
+    $(".quantityMinus").click(function(){
+      if (x > 1) {
+        x = parseInt($(".quantityDispaly").val()) - 1
+        $(".quantityDispaly").val(x);
+      }
+    })
+    // *quantity ends
 })
 
 var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
