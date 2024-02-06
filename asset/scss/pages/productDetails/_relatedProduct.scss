@@ -1,0 +1,130 @@
+#relatedProduct{
+    padding-bottom: 100px;
+    @include xs(){
+        padding-bottom: 50px;
+    }
+    @include sm(){
+        padding-bottom: 70px;
+    }
+    .wraper{
+        position: relative;
+    }
+    .relatedProductSlider{
+        .relatedProductSlide{
+            padding: 0px 12px;
+            .image{
+                position: relative;
+                img{
+                    width: 100%;
+                }
+                &:hover .overly span{
+                    transform: translateX(0);
+                    opacity: 1;
+                }
+            }
+            .overly{
+                position: absolute;
+                top: 50%;
+                right: 20px;
+                transform: translateY(-50%);
+                span{
+                    width: 36px;
+                    height: 36px;
+                    display: block;
+                    background-color: $white;
+                    color: $naviColor;
+                    margin-bottom: 10px;
+                    border-radius: 50%;
+                    text-align: center;
+                    line-height: 36px;
+                    transform: translateX(-150%);
+                    opacity: 0;
+                    &:hover{
+                        background-color: $babyPink;
+                        color: $white;
+                    }
+                }
+            }
+            .tag{
+                position: absolute;
+                top: 0;
+                left: 0;
+                padding: 0px 10px;
+                background-color: $babyPink;
+                color: $white;
+                p{
+                    font-weight: 700;
+                }
+            }
+            .ctn{
+                padding: 20px 0;
+                h4{
+                    display: inline-block;
+                    color: $textColor;
+                    font-size: 18px;
+                    font-weight: 600;
+                    margin-bottom: 10px;
+                    height: 40px;
+                }
+                p{
+                    display: inline-block;
+                    text-align: center;
+                    font-size: 10px;
+                    color: $babyPink;
+                    span{
+                        color: $textColor;
+                        font-size: 12px;
+                    }
+                }
+                h6{
+                    font-size: 16px;
+                    color: $grayColor;
+                }
+                .mobileShopIcons{
+                    border: 1px solid $babyPink;
+                    margin: 10px 0;
+                    a{
+                        span{
+                            display: inline-block;
+                            color: $babyPink;
+                            width: 100%;
+                            text-align: left;
+                            padding: 5px 0;
+                            font-size: 18px;
+                            text-align: center;
+                        }
+                        &:first-child{
+                            padding-right: 0;
+                            span{
+                                color: $white;
+                                background-color: $babyPink;
+                            }
+                        }
+                        &:last-child{
+                            padding-left: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .arrows{
+        span{
+            color: $white;
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            left: 12px;
+            transform: translateY(-50%);
+            padding:15px 10px;
+            background-color: rgba(0, 0, 0, 0.5);
+            @include custom(){
+                top: 40%;
+            }
+        }
+        .rightArrow{
+            left: unset;
+            right: 12px;
+        }
+    }
+}

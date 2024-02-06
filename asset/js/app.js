@@ -1,5 +1,9 @@
 $(function(){
 
+  $(window).on("load",function(){
+    $(".preloader").addClass("hide")
+  })
+
   // *aos starts
   AOS.init();
   // *aos ends
@@ -359,6 +363,38 @@ $(function(){
       }
     })
     // *quantity ends
+
+    // *related slider starts
+    $(".relatedProductSlider").slick({
+      slidesToShow:4,
+      arrows:true,
+      prevArrow:".leftArrow",
+      nextArrow:".rightArrow",
+      responsive: [
+        {
+          breakpoint: 1199,
+          settings:{
+            slidesToShow: 3,
+            slidesToScroll:1,
+          },
+        },
+        {
+          breakpoint: 991,
+          settings:{
+            slidesToShow: 2,
+            slidesToScroll:2,
+          },
+        },
+        {
+          breakpoint: 575,
+          settings:{
+            slidesToShow: 1,
+            slidesToScroll:1,
+          },
+        },
+      ]
+    })
+    // *related slider ends
 })
 
 var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))

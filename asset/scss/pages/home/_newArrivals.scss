@@ -157,6 +157,7 @@
             visibility: visible;
         }
         &.leftArrow{
+            cursor: pointer;
             left: 0%;
             transform: translate(80%,-50%);
             @include xs(){
@@ -167,6 +168,7 @@
             }
         }
         &.rightArrow{
+            cursor: pointer;
             right: 0%;
             transform: translate(-80%,-50%);
             @include xs(){

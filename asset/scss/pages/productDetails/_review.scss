@@ -43,12 +43,12 @@
     }
     .ctn{
         #description{
-            padding: 40px 0;
+            padding-top: 40px;
             @include xs(){
-                padding: 10px 0;
+                padding-top: 10px;
             }
             @include sm(){
-                padding: 20px 0;
+                padding-top: 20px;
             }
             p{
                 margin: 20px 0;

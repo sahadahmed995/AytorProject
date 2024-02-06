@@ -10,6 +10,73 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
+.preloader {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  background-color: #fff;
+  z-index: 9999;
+  transition: 0.35s;
+}
+.preloader .ctn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: logoReplaceMent 0.5s ease 1.5s 1 forwards;
+}
+.preloader .ctn .preloadertext {
+  margin-bottom: -20px;
+  opacity: 0;
+  transform: translateX(-50vh);
+  animation: preloaderTextAnimation 1s ease 0.5s 1 forwards;
+}
+@keyframes preloaderTextAnimation {
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@keyframes logoReplaceMent {
+  100% {
+    top: 38%;
+  }
+}
+.preloader .wraper {
+  animation: loaderApear 0.25s 2.5s linear 1 forwards;
+  opacity: 0;
+}
+.preloader .loder {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  border-left: 5px solid #FF6F61;
+  border-top: 5px solid transparent;
+  transform: translate(-50%, -50%);
+  border-radius: 50% 50% 50% 50%;
+  animation: loader 1s linear infinite forwards;
+}
+@keyframes loader {
+  0% {
+    transform: translate(-50%, -50%) rotateZ(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotateZ(360deg);
+  }
+}
+@keyframes loaderApear {
+  100% {
+    opacity: 1;
+  }
+}
+.preloader.hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -23,6 +90,7 @@ h1, h2, h3, h4, h5, h6, p, span, ul, ol, li, a {
 
 body {
   font-family: "Josefin Sans", sans-serif;
+  overflow-x: hidden;
 }
 
 ul, ol {
@@ -665,6 +733,7 @@ aside .offcanvas-body ul .dropDownCtn.active {
   }
 }
 #newArrivals .arrow.leftArrow {
+  cursor: pointer;
   left: 0%;
   transform: translate(80%, -50%);
 }
@@ -679,6 +748,7 @@ aside .offcanvas-body ul .dropDownCtn.active {
   }
 }
 #newArrivals .arrow.rightArrow {
+  cursor: pointer;
   right: 0%;
   transform: translate(-80%, -50%);
 }
@@ -1827,6 +1897,7 @@ aside .offcanvas-body ul .dropDownCtn.active {
   }
 }
 #team .arrows span {
+  cursor: pointer;
   position: absolute;
   width: 35px;
   height: 35px;
@@ -2720,16 +2791,16 @@ aside .offcanvas-body ul .dropDownCtn.active {
   background-color: #FF6F61;
 }
 #reviewSec .ctn #description {
-  padding: 40px 0;
+  padding-top: 40px;
 }
 @media (320px <= width <= 575px) {
   #reviewSec .ctn #description {
-    padding: 10px 0;
+    padding-top: 10px;
   }
 }
 @media (576px <= width <= 767px) {
   #reviewSec .ctn #description {
-    padding: 20px 0;
+    padding-top: 20px;
   }
 }
 #reviewSec .ctn #description p {
@@ -2918,6 +2989,137 @@ aside .offcanvas-body ul .dropDownCtn.active {
   #reviewSec .ctn #information table tr td {
     font-size: 14px;
   }
+}
+
+#relatedProduct {
+  padding-bottom: 100px;
+}
+@media (320px <= width <= 575px) {
+  #relatedProduct {
+    padding-bottom: 50px;
+  }
+}
+@media (576px <= width <= 767px) {
+  #relatedProduct {
+    padding-bottom: 70px;
+  }
+}
+#relatedProduct .wraper {
+  position: relative;
+}
+#relatedProduct .relatedProductSlider .relatedProductSlide {
+  padding: 0px 12px;
+}
+#relatedProduct .relatedProductSlider .relatedProductSlide .image {
+  position: relative;
+}
+#relatedProduct .relatedProductSlider .relatedProductSlide .image img {
+  width: 100%;
+}
+#relatedProduct .relatedProductSlider .relatedProductSlide .image:hover .overly span, #relatedProduct .relatedProductSlider .relatedProductSlide .image:hover #aboutOerly .overlyCtn span, #aboutOerly #relatedProduct .relatedProductSlider .relatedProductSlide .image:hover .overlyCtn span {
+  transform: translateX(0);
+  opacity: 1;
+}
+#relatedProduct .relatedProductSlider .relatedProductSlide .overly, #relatedProduct .relatedProductSlider .relatedProductSlide #aboutOerly .overlyCtn, #aboutOerly #relatedProduct .relatedProductSlider .relatedProductSlide .overlyCtn {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+#relatedProduct .relatedProductSlider .relatedProductSlide .overly span, #relatedProduct .relatedProductSlider .relatedProductSlide #aboutOerly .overlyCtn span, #aboutOerly #relatedProduct .relatedProductSlider .relatedProductSlide .overlyCtn span {
+  width: 36px;
+  height: 36px;
+  display: block;
+  background-color: #fff;
+  color: #151A32;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 36px;
+  transform: translateX(-150%);
+  opacity: 0;
+}
+#relatedProduct .relatedProductSlider .relatedProductSlide .overly span:hover, #relatedProduct .relatedProductSlider .relatedProductSlide #aboutOerly .overlyCtn span:hover, #aboutOerly #relatedProduct .relatedProductSlider .relatedProductSlide .overlyCtn span:hover {
+  background-color: #FF6F61;
+  color: #fff;
+}
+#relatedProduct .relatedProductSlider .relatedProductSlide .tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0px 10px;
+  background-color: #FF6F61;
+  color: #fff;
+}
+#relatedProduct .relatedProductSlider .relatedProductSlide .tag p {
+  font-weight: 700;
+}
+#relatedProduct .relatedProductSlider .relatedProductSlide .ctn {
+  padding: 20px 0;
+}
+#relatedProduct .relatedProductSlider .relatedProductSlide .ctn h4 {
+  display: inline-block;
+  color: #11161E;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  height: 40px;
+}
+#relatedProduct .relatedProductSlider .relatedProductSlide .ctn p {
+  display: inline-block;
+  text-align: center;
+  font-size: 10px;
+  color: #FF6F61;
+}
+#relatedProduct .relatedProductSlider .relatedProductSlide .ctn p span {
+  color: #11161E;
+  font-size: 12px;
+}
+#relatedProduct .relatedProductSlider .relatedProductSlide .ctn h6 {
+  font-size: 16px;
+  color: #444;
+}
+#relatedProduct .relatedProductSlider .relatedProductSlide .ctn .mobileShopIcons {
+  border: 1px solid #FF6F61;
+  margin: 10px 0;
+}
+#relatedProduct .relatedProductSlider .relatedProductSlide .ctn .mobileShopIcons a span {
+  display: inline-block;
+  color: #FF6F61;
+  width: 100%;
+  text-align: left;
+  padding: 5px 0;
+  font-size: 18px;
+  text-align: center;
+}
+#relatedProduct .relatedProductSlider .relatedProductSlide .ctn .mobileShopIcons a:first-child {
+  padding-right: 0;
+}
+#relatedProduct .relatedProductSlider .relatedProductSlide .ctn .mobileShopIcons a:first-child span {
+  color: #fff;
+  background-color: #FF6F61;
+}
+#relatedProduct .relatedProductSlider .relatedProductSlide .ctn .mobileShopIcons a:last-child {
+  padding-left: 0;
+}
+#relatedProduct .arrows span {
+  color: #fff;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  padding: 15px 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+@media (320px <= width <= 991px) {
+  #relatedProduct .arrows span {
+    top: 40%;
+  }
+}
+#relatedProduct .arrows .rightArrow {
+  left: unset;
+  right: 12px;
 }
 
 footer {

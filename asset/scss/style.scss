@@ -1,4 +1,5 @@
 @import "./variables/variables";
+@import "./common/preloader";
 @import "./common/common";
 @import "./common/nav";
 @import "./pages/home/banner";
@@ -18,4 +19,5 @@
 @import "./pages/shop/shopMain";
 @import "./pages/productDetails/productDetals";
 @import "./pages/productDetails/review";
+@import "./pages/productDetails/relatedProduct";
 @import "./common/footer";
