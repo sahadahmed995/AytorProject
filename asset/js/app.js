@@ -1,7 +1,7 @@
 $(function(){
 
   $(window).on("load",function(){
-    $(".preloader").addClass("hide")
+    $(".preloader").removeClass("active")
   })
 
   // *aos starts
